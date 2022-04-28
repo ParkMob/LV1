@@ -352,7 +352,7 @@ h4.sheet-section-head-DB {
 	font-style: normal;
 }
 h4.sheet-section-head-MW,
-h4.sheet-section-head-COMBET,
+h4.sheet-section-head-COMBAT,
 h4.sheet-section-head-TAL {
 	background-color: #0c00ff;
 	color: #f0f0f0;

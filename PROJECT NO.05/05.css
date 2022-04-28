@@ -789,20 +789,20 @@ input[type="checkbox"].skill.cb {
   margin: 0px 5px 0px 0px;
 }
 /* 전투-------------------------------------------- */
-.combet.wrap {
+.COMBAT.wrap {
   background: rgba(255, 255, 255, 0.6);
 }
-.combet.title {
+.COMBAT.title {
 }
-.combet.box {
+.COMBAT.box {
   padding: 0px 20px 0px 20px;
 }
-.combet.line,
-.combet.line1 {
+.COMBAT.line,
+.COMBAT.line1 {
   display: flex;
 }
-.combet.line1 > input.ATK,
-.combet.line1 > select.ATK {
+.COMBAT.line1 > input.ATK,
+.COMBAT.line1 > select.ATK {
   color: #6b6363;
 }
 select.ATK {

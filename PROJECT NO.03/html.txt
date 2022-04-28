@@ -1120,33 +1120,33 @@
   <!------- 전투 -------->
 
   <input type="checkbox" style="display:none" class="sheet-showskills" name="attr_showskills" value="1" />
-  <div class="COMBET">
-    <h4 class="HEAD-COMBET">
+  <div class="COMBAT">
+    <h4 class="HEAD-COMBAT">
       전투
       <img src="https://i.imgur.com/4hY1tru.png" alt="DECO3" class="DECO3" />
     </h4>
 
-    <div class="BOX-COMBET">
-      <div class="COMBET-INDICATION">
-        <div class="INDICATION-TEXT-COMBET1">
+    <div class="BOX-COMBAT">
+      <div class="COMBAT-INDICATION">
+        <div class="INDICATION-TEXT-COMBAT1">
           무기
         </div>
-        <div class="INDICATION-TEXT-COMBET2">
+        <div class="INDICATION-TEXT-COMBAT2">
           기능
         </div>
-        <div class="INDICATION-TEXT-COMBET3">
+        <div class="INDICATION-TEXT-COMBAT3">
           피해
         </div>
-        <div class="INDICATION-TEXT-COMBET4">
+        <div class="INDICATION-TEXT-COMBAT4">
           사거리
         </div>
-        <div class="INDICATION-TEXT-COMBET5">
+        <div class="INDICATION-TEXT-COMBAT5">
           공격 횟수
         </div>
-        <div class="INDICATION-TEXT-COMBET6">
+        <div class="INDICATION-TEXT-COMBAT6">
           탄약
         </div>
-        <div class="INDICATION-TEXT-COMBET7">
+        <div class="INDICATION-TEXT-COMBAT7">
           고장
         </div>
       </div>

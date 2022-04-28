@@ -661,7 +661,7 @@ button[type="roll"].smallnonskillbutton-roll:hover {
 input.shift_page_skill[value="0"]:checked ~ .skill.wrap {
 	display: block;
 }
-input.shift_page_combet[value="1"]:checked ~ .combet_gear_poss.wrap {
+input.shift_page_COMBAT[value="1"]:checked ~ .COMBAT_gear_poss.wrap {
 	display: block;
 }
 input.shift_page_bg[value="2"]:checked ~ .backstory.wrap {
@@ -702,7 +702,7 @@ input.shift_page_skill[value="0"]:checked ~ .sks-false {
 	color: white !important;
 	transition-duration: 0.8s;
 }
-input.shift_page_combet[value="1"]:checked ~ .cb-false {
+input.shift_page_COMBAT[value="1"]:checked ~ .cb-false {
 	color: white !important;
 	transition-duration: 0.8s;
 }
@@ -803,21 +803,21 @@ input[type="checkbox"].skill.cb {
 	margin: 0px 5px 0px 0px;
 }
 /* 전투/장비소지품-------------------------------------------- */
-.combet_gear_poss.wrap {
+.COMBAT_gear_poss.wrap {
 	display: none;
 	padding: 0px;
 	margin: 0px;
 	background: transparent;
 }
-.combet.title {
+.COMBAT.title {
 }
-img.combet {
+img.COMBAT {
 	width: 230px;
 }
-.combet.box {
+.COMBAT.box {
 	padding: 0px 20px 0px 20px;
 }
-.combet.line {
+.COMBAT.line {
 	display: flex;
 }
 select.ATK {

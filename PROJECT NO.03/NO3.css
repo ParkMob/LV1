@@ -1027,7 +1027,7 @@ h4.sheet-HEAD-SKILLREMINDER {
   font-size: 10px;
 }
 /* -------------전투-------------------------------------------- */
-.sheet-COMBET {
+.sheet-COMBAT {
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 0%,
@@ -1053,7 +1053,7 @@ h4.sheet-HEAD-SKILLREMINDER {
   );
   border-image-slice: 1;
 }
-h4.sheet-HEAD-COMBET {
+h4.sheet-HEAD-COMBAT {
   font-family: 'S-CoreDream-6Bold';
   color: #e7385e;
   font-family: ;
@@ -1064,7 +1064,7 @@ h4.sheet-HEAD-COMBET {
   text-align: center;
   padding:10px;
 }
-.sheet-BOX-COMBET {
+.sheet-BOX-COMBAT {
   color: white;
   display: grid;
   margin-top:-5px;
@@ -1075,16 +1075,16 @@ h4.sheet-HEAD-COMBET {
   column-gap: 1px;
   height: 29px;
 }
-.sheet-COMBET-INDICATION {
+.sheet-COMBAT-INDICATION {
   display: grid;
   grid-template-columns: 230px 18px 25px 130px 65px 65px 65px 65px 80px 65px;
   column-gap: 1px;
   height: 20px;
 }
-.sheet-INDICATION-TEXT-COMBET2 {
+.sheet-INDICATION-TEXT-COMBAT2 {
   grid-column-start: 4;
 }
-.sheet-INDICATION-TEXT-COMBET4 {
+.sheet-INDICATION-TEXT-COMBAT4 {
   grid-column-start: 7;
 }
 input.sheet-unarmed {

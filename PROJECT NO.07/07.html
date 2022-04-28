@@ -1573,7 +1573,7 @@
     <div class="division wrap">
         <div class="page-select">
             <div class="sks">
-                <input type="checkbox" class="shift_page_combet" name="attr_page" value="0" checked />
+                <input type="checkbox" class="shift_page_COMBAT" name="attr_page" value="0" checked />
                 <div class="sks-false">· 전투/무기 ·</div>
             </div>
             <div class="cb">
@@ -1587,24 +1587,24 @@
         </div>
     </div>
     <!----전투---->
-    <input type="checkbox" style="display:none" class="shift_page_combet" name="attr_page" value="0" />
-    <div class="combet wrap">
-        <div class="combet title">
+    <input type="checkbox" style="display:none" class="shift_page_COMBAT" name="attr_page" value="0" />
+    <div class="COMBAT wrap">
+        <div class="COMBAT title">
             · 전투 및 무기 ·
         </div>
-        <div class="combet box">
+        <div class="COMBAT box">
             <!--
-                <div class="combet line">
-                    <div class="INDICATION-TEXT-COMBET1">무기</div>
-                    <div class="INDICATION-TEXT-COMBET2">기능</div>
-                    <div class="INDICATION-TEXT-COMBET3">피해</div>
-                    <div class="INDICATION-TEXT-COMBET4">사거리</div>
-                    <div class="INDICATION-TEXT-COMBET5">공격 횟수</div>
-                    <div class="INDICATION-TEXT-COMBET6">탄약</div>
-                    <div class="INDICATION-TEXT-COMBET7">고장</div>
+                <div class="COMBAT line">
+                    <div class="INDICATION-TEXT-COMBAT1">무기</div>
+                    <div class="INDICATION-TEXT-COMBAT2">기능</div>
+                    <div class="INDICATION-TEXT-COMBAT3">피해</div>
+                    <div class="INDICATION-TEXT-COMBAT4">사거리</div>
+                    <div class="INDICATION-TEXT-COMBAT5">공격 횟수</div>
+                    <div class="INDICATION-TEXT-COMBAT6">탄약</div>
+                    <div class="INDICATION-TEXT-COMBAT7">고장</div>
                 </div>
                 -->
-            <div class="combet line">
+            <div class="COMBAT line">
                 <input class="ATK dif" type="text" placeholder="비무장" disabled="true" />
                 <button class='ATK1' type='roll'
                     value='&{template:coc-attack} {{name=&ulcorn;@{character_name}&drcorn;의&nbsp;공격}} {{weaponname=@{unarmed_txt}}}{{success=[[@{fighting_brawl_mdr}]]}} {{hard=[[floor(@{fighting_brawl_mdr}/2)]]}} {{extreme=[[floor(@{fighting_brawl_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}} {{damage=[[1d3+@{damage_bonus}]]}}'
@@ -1620,7 +1620,7 @@
                 <input class="ATK def1" type="text" value="-" disabled="true" />
                 <input class="ATK def1" type="text" value="-" disabled="true" />
             </div>
-            <div class="combet line">
+            <div class="COMBAT line">
                 <input class="ATK default" type="text" name="attr_weapon1_mdr_name" />
                 <button class='ATK1' type='roll'
                     value='&{template:coc-attack} {{name=&ulcorn;@{character_name}&drcorn;의&nbsp;공격}}{{weaponname=@{weapon1_mdr_name}}} {{success=[[@{weapon1_mdr_skill}]]}} {{hard=[[floor(@{weapon1_mdr_skill}/2)]]}} {{extreme=[[floor(@{weapon1_mdr_skill}/5)]]}} {{malf=@{weapon1_mdr_malf}}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}} {{damage=[[@{weapon1_mdr_damage}@{weapon1_mdr_db}]]}}'
@@ -1653,7 +1653,7 @@
                 <input class="ATK" type="text" name="attr_weapon1_mdr_ammo" />
                 <input class="ATK" type="text" name="attr_weapon1_mdr_malf" />
             </div>
-            <div class="combet line">
+            <div class="COMBAT line">
                 <input class="ATK default" type="text" name="attr_weapon2_mdr_name" />
                 <button class='ATK1' type='roll'
                     value='&{template:coc-attack} {{name=&ulcorn;@{character_name}&drcorn;의&nbsp;공격}} {{weaponname=@{weapon2_mdr_name}}} {{success=[[@{weapon2_mdr_skill}]]}} {{hard=[[floor(@{weapon2_mdr_skill}/2)]]}} {{extreme=[[floor(@{weapon2_mdr_skill}/5)]]}} {{malf=@{weapon2_mdr_malf}}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}} {{damage=[[@{weapon2_mdr_damage}@{weapon2_mdr_db}]]}}'
@@ -1687,7 +1687,7 @@
                 <input class="ATK" type="text" name="attr_weapon2_mdr_malf" />
             </div>
 
-            <div class="combet line">
+            <div class="COMBAT line">
                 <input class="ATK default" type="text" name="attr_weapon3_mdr_name" />
                 <button class='ATK1' type='roll'
                     value='&{template:coc-attack}  {{name=&ulcorn;@{character_name}&drcorn;의&nbsp;공격}} {{weaponname=@{weapon3_mdr_name}}} {{success=[[@{weapon3_mdr_skill}]]}} {{hard=[[floor(@{weapon3_mdr_skill}/2)]]}} {{extreme=[[floor(@{weapon3_mdr_skill}/5)]]}} {{malf=@{weapon3_mdr_malf}}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}} {{damage=[[@{weapon3_mdr_damage}@{weapon3_mdr_db}]]}}'
@@ -1721,7 +1721,7 @@
                 <input class="ATK" type="text" name="attr_weapon3_mdr_malf" />
             </div>
             <fieldset class="repeating_weaponsmdr">
-                <div class="combet line">
+                <div class="COMBAT line">
                     <input class="ATK default" type="text" name="attr_weaponname_mdr" />
                     <button class='ATK1' type='roll'
                         value='&{template:coc-attack} {{name=&ulcorn;@{character_name}&drcorn;의&nbsp;공격}} {{weaponname=@{weaponname_mdr}}} {{success=[[@{weaponskill_mdr}]]}} {{hard=[[floor(@{weaponskill_mdr}/2)]]}} {{extreme=[[floor(@{weaponskill_mdr}/5)]]}} {{malf=@{weaponmalf_mdr}}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}} {{damage=[[@{weapondamage_mdr}@{weapondb_mdr}]]}}'
