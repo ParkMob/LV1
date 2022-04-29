@@ -1,14 +1,15 @@
 # PROJECT NO3
 
-**신청자** : @fa\***\*  
-**작업자\*\* : @PARKMOB_PBL (PARKMOB) of T.@MOBCA_D (MOBCA)
+**신청자** : @fa\*\*\*\*
+
+**작업자** : @PARKMOB_PBL (PARKMOB) of T.@MOBCA_D (MOBCA)
 
 **커미션 최종 전달 일자** : 2021 12 11  
 **커미션 최종 갱신 일자** : 2022 01 17
 
-**UPDATE**  
-2022년 01월 17일 NO3.html 파일 및 NO3.css 파일 내부의 오타 및 일부 코드의 수정이 완료되었습니다.  
-html.txt 파일과 css.txt파일의 내용은 2021년 12월 11의 버전과 동일합니다.
+**UPDATE**
+2021년 12월 11일 최종 전달이 완료되었습니다.
+2022년 01월 17일 파일 내부의 오타 및 일부 코드의 수정이 완료되었습니다.
 
 **CONTACT** : @PARKMOB_PBL / mobca0.5@gmail.com  
 **FAST CONTACT** : @PARKMOB_A0 / yeojinp0415@gmail.com  
