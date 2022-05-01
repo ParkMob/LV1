@@ -352,7 +352,7 @@ h4.sheet-section-head-DB {
 	font-style: normal;
 }
 h4.sheet-section-head-MW,
-h4.sheet-section-head-COMBAT,
+h4.sheet-section-head-combat,
 h4.sheet-section-head-TAL {
 	background-color: #0c00ff;
 	color: #f0f0f0;
@@ -594,7 +594,7 @@ div.sheet-section-SAN {
 	padding: 1%;
 	padding-bottom: 5px;
 }
-div.sheet-section-COMBAT,
+div.sheet-section-combat,
 div.sheet-section-POSS,
 div.sheet-section-BACKSTORY,
 div.sheet-section-DB,

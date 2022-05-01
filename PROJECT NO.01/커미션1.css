@@ -262,7 +262,7 @@ h4.sheet-section-head-LUK,
 h4.sheet-section-head-MP,
 h4.sheet-section-head-MW,
 h4.sheet-section-head-DB,
-h4.sheet-section-head-COMBAT,
+h4.sheet-section-head-combat,
 h4.sheet-section-head-TAL {
 	background-color: #005aff;
 	color: #eb5228;
@@ -511,7 +511,7 @@ div.sheet-section-SAN {
 	padding-bottom: 5px;
 }
 
-div.sheet-section-COMBAT,
+div.sheet-section-combat,
 div.sheet-section-POSS,
 div.sheet-section-BACKSTORY,
 div.sheet-section-DB,

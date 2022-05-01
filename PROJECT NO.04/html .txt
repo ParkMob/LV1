@@ -987,19 +987,19 @@
   </div>
   <!------- 전투 -------->
   <input type="checkbox" style="display:none" class="sheet-showskills" name="attr_showskills" value="1">
-  <div class=COMBAT>
-    <h4 class="HEAD-COMBAT">
+  <div class=combat>
+    <h4 class="HEAD-combat">
       <img src="https://i.imgur.com/EfnTUkj.png" class="combat" alt="combat">
     </h4>
-    <div class="BOX-COMBAT">
-      <div class="COMBAT-INDICATION">
-        <div class="INDICATION-TEXT-COMBAT1">무기</div>
-        <div class="INDICATION-TEXT-COMBAT2">기능</div>
-        <div class="INDICATION-TEXT-COMBAT3">피해</div>
-        <div class="INDICATION-TEXT-COMBAT4">사거리</div>
-        <div class="INDICATION-TEXT-COMBAT5">공격 횟수</div>
-        <div class="INDICATION-TEXT-COMBAT6">탄약</div>
-        <div class="INDICATION-TEXT-COMBAT7">고장</div>
+    <div class="BOX-combat">
+      <div class="combat-INDICATION">
+        <div class="INDICATION-TEXT-combat1">무기</div>
+        <div class="INDICATION-TEXT-combat2">기능</div>
+        <div class="INDICATION-TEXT-combat3">피해</div>
+        <div class="INDICATION-TEXT-combat4">사거리</div>
+        <div class="INDICATION-TEXT-combat5">공격 횟수</div>
+        <div class="INDICATION-TEXT-combat6">탄약</div>
+        <div class="INDICATION-TEXT-combat7">고장</div>
       </div>
       <div class="ATK-ACTION">
         <input class="unarmed" type="text" placeholder="비무장" disabled="true" />
@@ -1318,7 +1318,7 @@
         </div>
       </div>
       <div class="SUBHEAD-NPC">전투</div>
-      <div class="NPC-COMBAT">
+      <div class="NPC-combat">
         <input class="narrow-input-FUNCNPC" style="width:68%" type="text" name="attr_minionweapon1"
           placeholder="무기 1 (기능 6)" />
         <input class="narrow-input-FUNCNPC" style="width:28%" type="text" name="attr_miniondamage1"
@@ -1327,7 +1327,7 @@
           value='&{template:coc-minionattack} {{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;공격}} {{name=@{minionweapon1}}} {{success=[[@{minionskill6}]]}} {{hard=[[floor(@{minionskill6}/2)]]}} {{extreme=[[floor(@{minionskill6}/5)]]}} {{roll1=[[1d100]]}} {{damage=[[@{miniondamage1}]]}}'
           name='roll_miniondamage1'></button>
       </div>
-      <div class="NPC-COMBAT">
+      <div class="NPC-combat">
         <input class="narrow-input-FUNCNPC" style="width:68%" type="text" name="attr_minionweapon2"
           placeholder="무기 2 (기능 7)" />
         <input class="narrow-input-FUNCNPC" style="width:28%" type="text" name="attr_miniondamage2"
@@ -1336,7 +1336,7 @@
           value='&{template:coc-minionattack} {{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;공격}}{{name=@{minionweapon2}}} {{success=[[@{minionskill7}]]}} {{hard=[[floor(@{minionskill7}/2)]]}} {{extreme=[[floor(@{minionskill7}/5)]]}} {{roll1=[[1d100]]}} {{damage=[[@{miniondamage2}]]}}'
           name='roll_miniondamage2'></button>
       </div>
-      <div class="NPC-COMBAT">
+      <div class="NPC-combat">
         <input class="narrow-input-FUNCNPC" style="width:68%" type="text" name="attr_minionweapon3"
           placeholder="무기 3 (기능 8)" />
         <input class="narrow-input-FUNCNPC" style="width:28%" type="text" name="attr_miniondamage3"
@@ -1509,7 +1509,7 @@
         </div>
         <div class="SUBHEAD-NPC">전투</div>
 
-        <div class="NPC-COMBAT">
+        <div class="NPC-combat">
           <input class="narrow-input-FUNCNPC" style="width:68%" type="text" name="attr_minionweapon1"
             placeholder="무기 1 (기능 6)" />
           <input class="narrow-input-FUNCNPC" style="width:28%" type="text" name="attr_miniondamage1"
@@ -1518,7 +1518,7 @@
             value='&{template:coc-minionattack} {{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;공격}} {{name=@{minionweapon1}}} {{success=[[@{minionskill6}]]}} {{hard=[[floor(@{minionskill6}/2)]]}} {{extreme=[[floor(@{minionskill6}/5)]]}} {{roll1=[[1d100]]}} {{damage=[[@{miniondamage1}]]}}'
             name='roll_miniondamage1'></button>
         </div>
-        <div class="NPC-COMBAT">
+        <div class="NPC-combat">
           <input class="narrow-input-FUNCNPC" style="width:68%" type="text" name="attr_minionweapon2"
             placeholder="무기 2 (기능 7)" />
           <input class="narrow-input-FUNCNPC" style="width:28%" type="text" name="attr_miniondamage2"
@@ -1527,7 +1527,7 @@
             value='&{template:coc-minionattack} {{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;공격}}{{name=@{minionweapon2}}} {{success=[[@{minionskill7}]]}} {{hard=[[floor(@{minionskill7}/2)]]}} {{extreme=[[floor(@{minionskill7}/5)]]}} {{roll1=[[1d100]]}} {{damage=[[@{miniondamage2}]]}}'
             name='roll_miniondamage2'></button>
         </div>
-        <div class="NPC-COMBAT">
+        <div class="NPC-combat">
           <input class="narrow-input-FUNCNPC" style="width:68%" type="text" name="attr_minionweapon3"
             placeholder="무기 3 (기능 8)" />
           <input class="narrow-input-FUNCNPC" style="width:28%" type="text" name="attr_miniondamage3"

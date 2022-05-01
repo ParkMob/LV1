@@ -838,7 +838,7 @@ input[type="checkbox"].skill.cb {
 	margin-bottom: 20px;
 }
 
-input.shift_page_COMBAT[value="0"]:checked ~ .COMBAT.wrap {
+input.shift_page_combat[value="0"]:checked ~ .combat.wrap {
 	display: block;
 }
 input.shift_page_gear[value="1"]:checked ~ .gear_poss.wrap {
@@ -881,7 +881,7 @@ input.shift_page_bg[value="2"]:checked ~ .backstory.wrap {
 	border-radius: 4px;
 	border: 1px solid rgba(255, 0, 0, 0);
 }
-input.shift_page_COMBAT[value="0"]:checked ~ .sks-false {
+input.shift_page_combat[value="0"]:checked ~ .sks-false {
 	color: rgb(72 119 41);
 	border: 1px solid rgb(72 119 41);
 	transition: 0.6s ease-in-out;
@@ -898,15 +898,15 @@ input.shift_page_bg[value="2"]:checked ~ .bs-false {
 }
 
 /* 전투-------------------------------------------- */
-.COMBAT.wrap {
+.combat.wrap {
 }
-.COMBAT.title {
+.combat.title {
 }
-.COMBAT.box {
+.combat.box {
 	padding: 0px 20px 0px 20px;
 }
-.COMBAT.line,
-.COMBAT.line1 {
+.combat.line,
+.combat.line1 {
 	display: flex;
 }
 

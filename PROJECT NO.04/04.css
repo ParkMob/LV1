@@ -1124,7 +1124,7 @@ fieldset.repeating_skillsmdr {
 	font-size: 10px;
 }
 /* -------------전투-------------------------------------------- */
-.sheet-COMBAT {
+.sheet-combat {
 	width: 95%;
 	margin: 0 auto;
 	margin-top: 20px;
@@ -1133,7 +1133,7 @@ fieldset.repeating_skillsmdr {
 	background-color: rgba(255, 255, 255, 0.747);
 }
 
-h4.sheet-HEAD-COMBAT {
+h4.sheet-HEAD-combat {
 	color: black;
 	font-weight: 800;
 	font-size: 18px;
@@ -1141,7 +1141,7 @@ h4.sheet-HEAD-COMBAT {
 	font-style: normal;
 	text-align: center;
 }
-.sheet-BOX-COMBAT {
+.sheet-BOX-combat {
 	color: black;
 	display: grid;
 	padding: 10px;
@@ -1154,16 +1154,16 @@ h4.sheet-HEAD-COMBAT {
 	align-items: center;
 	width: 93%;
 }
-.sheet-COMBAT-INDICATION {
+.sheet-combat-INDICATION {
 	display: grid;
 	grid-template-columns: 180px 25px 25px 120px 65px 65px 65px 65px 80px 65px;
 	column-gap: 1px;
 	height: 20px;
 }
-.sheet-INDICATION-TEXT-COMBAT2 {
+.sheet-INDICATION-TEXT-combat2 {
 	grid-column-start: 4;
 }
-.sheet-INDICATION-TEXT-COMBAT4 {
+.sheet-INDICATION-TEXT-combat4 {
 	grid-column-start: 7;
 }
 
