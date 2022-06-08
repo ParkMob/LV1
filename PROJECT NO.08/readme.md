@@ -1,14 +1,12 @@
 # PROJECT NO6
 
-**신청자** : @mm**\*\***  
 **작업자** : @PARKMOB_PBL (PARKMOB) of T.@MOBCA_D (MOBCA)
 
-**커미션 최종 전달 일자** : 2022 03 14  
-**커미션 최종 갱신 일자** : 2022 04 30
+**업로드 일자** : 2022 06 08
+**업데이트 일자** : 2022 06 08
 
 **UPDATE**  
-2022년 03월 14일 최종 전달이 완료되었습니다.  
-2022년 04월 30일 카피라이터 문구가 추가되었습니다.
+2022년 06월 08일 최초 업데이트가 완료되었습니다.
 
 **CONTACT** : @PARKMOB_PBL / mobca0.5@gmail.com  
 **EMERGENCY CONTACT**: @PARKMOB_A0 / yeojinp0415@gmail.com  
@@ -26,7 +24,6 @@
 
 ※ 어떠한 경우에도 해당 작업물의 레이아웃을 이용해 커미션을 개장, 혹은 배포를 진행할 수 없습니다.
 
-2022 04 30 추가  
 ※ 카피라이터의 경우 삭제가 불가능합니다.
 
 # 사용법
@@ -35,4 +32,4 @@
 
 # 완성물
 
-![PROJECT NO6](https://i.imgur.com/YbJogHR.jpg "PROJECT NO6")
+![PROJECT NO8](- "PROJECT NO8")

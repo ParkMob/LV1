@@ -1,7 +1,7 @@
 # LV1
 
 **LAST UPDATE** : 2022 06 08  
-**CONTRIBUTOR** : 팀 모카 소속 디자이너 박몹
+**CONTRIBUTOR** : @PARKMOB_PBL (PARKMOB) of T.@MOBCA_D (MOBCA)
 
 **OFFICIAL CONTACT** : @MOBCA_D / mobca0.5@park-mob.com  
 **EMERGENCY CONTACT** : @PARKMOB_PBL / yeojinp0415@gmail.com  
