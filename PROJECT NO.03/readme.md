@@ -10,8 +10,8 @@
 2021년 12월 11일 최종 전달이 완료되었습니다.
 2022년 01월 17일 파일 내부의 오타 및 일부 코드의 수정이 완료되었습니다.
 
-**CONTACT** : @PARKMOB_PBL / mobca0.5@gmail.com  
-**FAST CONTACT** : @PARKMOB_A0 / yeojinp0415@gmail.com  
+**OFFICIAL CONTACT** : @MOBCA_D / mobca0.5@park-mob.com  
+**EMERGENCY CONTACT** : @PARKMOB_PBL / yeojinp0415@gmail.com  
 시트 이용 도중 문제가 발생했을 경우 트위터 계정 혹은 이메일로 문의 바랍니다.
 
 # 주의사항

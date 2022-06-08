@@ -6,8 +6,8 @@
 **커미션 최종 전달 일자** : 2021 10 19  
 **커미션 최종 갱신 일자** : 2021 10 19
 
-**CONTACT** : @MOBCA_D / mobca0.5@gmail.com  
-**EMERGENCY CONTACT** : @PARKMOB_A0 / yeojinp0415@gmail.com  
+**OFFICIAL CONTACT** : @MOBCA_D / mobca0.5@park-mob.com  
+**EMERGENCY CONTACT** : @PARKMOB_PBL / yeojinp0415@gmail.com  
 시트 이용 도중 문제가 발생했을 경우 트위터 계정 혹은 이메일로 문의 바랍니다.
 
 # 주의사항
