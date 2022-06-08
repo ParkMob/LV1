@@ -1,10 +1,10 @@
 # LV1
 
-**LAST UPDATE** : 2021 11 13  
-**CONTRIBUTOR** : 박몹
+**LAST UPDATE** : 2022 06 08  
+**CONTRIBUTOR** : 팀 모카 소속 디자이너 박몹
 
-**CONTACT** : @PARKMOB_PBL / mobca0.5@park-mob.com         
-**EMERGENCY CONTACT** : @PARKMOB_AO / yeojinp0415@gmail.com  
+**OFFICIAL CONTACT** : @MOBCA_D / mobca0.5@park-mob.com  
+**EMERGENCY CONTACT** : @PARKMOB_PBL / yeojinp0415@gmail.com  
 시트 이용 도중 문제가 발생했을 경우 트위터 계정 혹은 이메일로 문의 바랍니다.
 
 # 주의사항
