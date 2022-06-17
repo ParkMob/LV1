@@ -197,7 +197,7 @@ textarea.attr_scenario_rewards {
 .basic1 {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 }
 
 /* 바이오 ---------------------------------------------------*/
