@@ -11,10 +11,7 @@
                     <input type="checkbox" class="add_function_downtime" name="attr_add_dt" value="1" />
                     <span>플레이 기록</span>
                 </div>
-                <div>
-                    <input type="checkbox" class="add_function_dice" name="attr_add_dr" value="1" />
-                    <span>추가 다이스</span>
-                </div>
+
                 <div>
                     <input type="checkbox" class="add_function_npcsheet" name="attr_add_ns" value="1" />
                     <span>NPC 전용 시트</span>
@@ -295,8 +292,6 @@
     </div>
 
     <!----다이스---->
-    <input type="checkbox" class="add_function_dice" name="attr_add_dr" style="display: none" name="attr_add"
-        value="1" />
     <div class="dice wrap">
         <div class="dice box">
             <div class="dice line1">
@@ -766,35 +761,6 @@
         <div class="skill box">
             <!----줄바꿈---->
             <div class="skill line1">
-                <div class="accounting skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" value="1" name="attr_accounting_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">회계(05%)</div>
-                    <input class="skill name" type="text" name="attr_accounting_mdr" value="05" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{accounting_txt}}} {{success=[[@{accounting_mdr}]]}} {{hard=[[floor(@{accounting_mdr}/2)]]}} {{extreme=[[floor(@{accounting_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_accounting_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{accounting_txt}}} {{success=[[@{accounting_mdr}]]}} {{hard=[[floor(@{accounting_mdr}/2)]]}} {{extreme=[[floor(@{accounting_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_accounting_mdr_check"></button>
-                </div>
-                <div class="anthropology skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" value="1" class="skill cb" value="1"
-                            name="attr_anthropology_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">인류학(01%)</div>
-                    <input class="skill name" type="text" name="attr_anthropology_mdr" value="01" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{anthropology_txt}}} {{success=[[@{anthropology_mdr}]]}} {{hard=[[floor(@{anthropology_mdr}/2)]]}} {{extreme=[[floor(@{anthropology_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_anthropology_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{anthropology_txt}}} {{success=[[@{anthropology_mdr}]]}} {{hard=[[floor(@{anthropology_mdr}/2)]]}} {{extreme=[[floor(@{anthropology_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_anthropology_mdr_check"></button>
-                </div>
                 <div class="appraise skillset">
                     <div>
                         <input type="checkbox" class="skill cb" class="skill cb" value="1"
@@ -825,155 +791,80 @@
                         value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{archaeology_txt}}} {{success=[[@{archaeology_mdr}]]}} {{hard=[[floor(@{archaeology_mdr}/2)]]}} {{extreme=[[floor(@{archaeology_mdr}/5)]]}} {{roll1=[[1d100]]}}"
                         name="roll_archaeology_mdr_check"></button>
                 </div>
-                <div class="charm skillset">
+                <div class="spothidden skillset">
                     <div>
                         <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_charm_mdr_checkbox" />
+                            name="attr_spot_hidden_mdr_checkbox" />
                         <div class="fake cb"></div>
                     </div>
-                    <div class="skill subtitle">매혹(15%)</div>
-                    <input class="skill name" type="text" name="attr_charm_mdr" value="15" />
+                    <div class="skill subtitle">관찰력(25%)</div>
+                    <input class="skill name" type="text" name="attr_spot_hidden_mdr" value="25" />
                     <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{charm_txt}}} {{success=[[@{charm_mdr}]]}} {{hard=[[floor(@{charm_mdr}/2)]]}} {{extreme=[[floor(@{charm_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_charm_mdr_check"></button>
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{spothidden_txt}}} {{success=[[@{spot_hidden_mdr}]]}} {{hard=[[floor(@{spot_hidden_mdr}/2)]]}} {{extreme=[[floor(@{spot_hidden_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_spot_hidden_mdr_check"></button>
                     <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{charm_txt}}} {{success=[[@{charm_mdr}]]}} {{hard=[[floor(@{charm_mdr}/2)]]}} {{extreme=[[floor(@{charm_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_charm_mdr_check"></button>
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{spothidden_txt}}} {{success=[[@{spot_hidden_mdr}]]}} {{hard=[[floor(@{spot_hidden_mdr}/2)]]}} {{extreme=[[floor(@{spot_hidden_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_spot_hidden_mdr_check"></button>
                 </div>
-                <div class="climb skillset">
+                <div class="fighting(brawl) skillset">
                     <div>
                         <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_climb_mdr_checkbox" />
+                            name="attr_fighting_brawl_mdr_checkbox" />
                         <div class="fake cb"></div>
                     </div>
-                    <div class="skill subtitle">오르기(20%)</div>
-                    <input class="skill name" type="text" name="attr_climb_mdr" value="20" />
+                    <div class="skill subtitle">근접전(격투)(25%)</div>
+                    <input class="skill name" type="text" name="attr_fighting_brawl_mdr" value="25" />
                     <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{climb_txt}}} {{success=[[@{climb_mdr}]]}} {{hard=[[floor(@{climb_mdr}/2)]]}} {{extreme=[[floor(@{climb_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_climb_mdr_check"></button>
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{fighting_brawl_txt}}} {{success=[[@{fighting_brawl_mdr}]]}} {{hard=[[floor(@{fighting_brawl_mdr}/2)]]}} {{extreme=[[floor(@{fighting_brawl_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_fighting_brawl_mdr_check"></button>
                     <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{climb_txt}}} {{success=[[@{climb_mdr}]]}} {{hard=[[floor(@{climb_mdr}/2)]]}} {{extreme=[[floor(@{climb_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_climb_mdr_check"></button>
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{fighting_brawl_txt}}} {{success=[[@{fighting_brawl_mdr}]]}} {{hard=[[floor(@{fighting_brawl_mdr}/2)]]}} {{extreme=[[floor(@{fighting_brawl_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_fighting_brawl_mdr_check"></button>
                 </div>
-                <div class="computeruse skillset">
+                <div class="mechrepair skillset">
                     <div>
                         <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_computer_use_mdr_checkbox" />
+                            name="attr_mech_repair_mdr_checkbox" />
                         <div class="fake cb"></div>
                     </div>
-                    <div class="skill subtitle">컴퓨터사용(05%)</div>
-                    <input class="skill name" type="text" name="attr_computer_use_mdr" value="05" />
+                    <div class="skill subtitle">기계수리(10%)</div>
+                    <input class="skill name" type="text" name="attr_mech_repair_mdr" value="10" />
                     <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{computeruse_txt}}} {{success=[[@{computer_use_mdr}]]}} {{hard=[[floor(@{computer_use_mdr}/2)]]}} {{extreme=[[floor(@{computer_use_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_computer_use_mdr_check"></button>
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{mechrepair_txt}}} {{success=[[@{mech_repair_mdr}]]}} {{hard=[[floor(@{mech_repair_mdr}/2)]]}} {{extreme=[[floor(@{mech_repair_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_mech_repair_mdr_check"></button>
                     <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{computeruse_txt}}} {{success=[[@{computer_use_mdr}]]}} {{hard=[[floor(@{computer_use_mdr}/2)]]}} {{extreme=[[floor(@{computer_use_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_computer_use_mdr_check"></button>
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{mechrepair_txt}}} {{success=[[@{mech_repair_mdr}]]}} {{hard=[[floor(@{mech_repair_mdr}/2)]]}} {{extreme=[[floor(@{mech_repair_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_mech_repair_mdr_check"></button>
                 </div>
-                <div class="creditrating skillset">
+                <div class="jump skillset">
                     <div>
                         <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_creditrating_mdr_checkbox" />
+                            name="attr_jump_mdr_checkbox" />
                         <div class="fake cb"></div>
                     </div>
-                    <div class="skill subtitle">재력(00%)</div>
-                    <input class="skill name" type="text" name="attr_credit_rating_mdr" value="00" />
+                    <div class="skill subtitle">도약(20%)</div>
+                    <input class="skill name" type="text" name="attr_jump_mdr" value="20" />
                     <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{creditrating_txt}}} {{success=[[@{credit_rating_mdr}]]}} {{hard=[[floor(@{credit_rating_mdr}/2)]]}} {{extreme=[[floor(@{credit_rating_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_credit_rating_mdr_check"></button>
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{jump_txt}}} {{success=[[@{jump_mdr}]]}} {{hard=[[floor(@{jump_mdr}/2)]]}} {{extreme=[[floor(@{jump_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_jump_mdr_check"></button>
                     <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{creditrating_txt}}} {{success=[[@{credit_rating_mdr}]]}} {{hard=[[floor(@{credit_rating_mdr}/2)]]}} {{extreme=[[floor(@{credit_rating_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_credit_rating_mdr_check"></button>
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{jump_txt}}} {{success=[[@{jump_mdr}]]}} {{hard=[[floor(@{jump_mdr}/2)]]}} {{extreme=[[floor(@{jump_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_jump_mdr_check"></button>
                 </div>
-                <div class="cthulhumythos skillset">
+                <div class="listen skillset">
                     <div>
                         <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_cthulhumythos_mdr_checkbox" />
+                            name="attr_listen_mdr_checkbox" />
                         <div class="fake cb"></div>
                     </div>
-                    <div class="skill subtitle">크툴루 신화(00%)</div>
-                    <input class="skill name" type="text" name="attr_cthulhu_mythos_mdr" value="0" placeholder="00" />
+                    <div class="skill subtitle">듣기(25%)</div>
+                    <input class="skill name" type="text" name="attr_listen_mdr" value="25" />
                     <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{cthulhumythos_txt}}} {{success=[[@{cthulhu_mythos_mdr}]]}} {{hard=[[floor(@{cthulhu_mythos_mdr}/2)]]}} {{extreme=[[floor(@{cthulhu_mythos_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_cthulhu_mythos_mdr_check"></button>
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{listen_txt}}} {{success=[[@{listen_mdr}]]}} {{hard=[[floor(@{listen_mdr}/2)]]}} {{extreme=[[floor(@{listen_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_listen_mdr_check"></button>
                     <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{cthulhumythos_txt}}} {{success=[[@{cthulhu_mythos_mdr}]]}} {{hard=[[floor(@{cthulhu_mythos_mdr}/2)]]}} {{extreme=[[floor(@{cthulhu_mythos_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_cthulhu_mythos_mdr_check"></button>
-                </div>
-                <div class="disguise skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_disguise_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">변장(05%)</div>
-                    <input class="skill name" type="text" name="attr_disguise_mdr" value="05" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{disguise_txt}}} {{success=[[@{disguise_mdr}]]}} {{hard=[[floor(@{disguise_mdr}/2)]]}} {{extreme=[[floor(@{disguise_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_disguise_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{disguise_txt}}} {{success=[[@{disguise_mdr}]]}} {{hard=[[floor(@{disguise_mdr}/2)]]}} {{extreme=[[floor(@{disguise_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_disguise_mdr_check"></button>
-                </div>
-                <div class="dodge skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_dodge_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">회피(민첩/2)</div>
-                    <input class="skill name" type="text" name="attr_dodge_mdr" value="00" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{dodge_txt}}} {{success=[[@{dodge_mdr}]]}} {{hard=[[floor(@{dodge_mdr}/2)]]}} {{extreme=[[floor(@{dodge_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_dodge_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{dodge_txt}}} {{success=[[@{dodge_mdr}]]}} {{hard=[[floor(@{dodge_mdr}/2)]]}} {{extreme=[[floor(@{dodge_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_dodge_mdr_check"></button>
-                </div>
-                <div class="driveauto skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_drive_auto_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">자동차 운전(20%)</div>
-                    <input class="skill name" type="text" name="attr_drive_auto_mdr" value="20" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{driveauto_txt} Roll}} {{success=[[@{drive_auto_mdr}]]}} {{hard=[[floor(@{drive_auto_mdr}/2)]]}} {{extreme=[[floor(@{drive_auto_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_drive_auto_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{driveauto_txt} Roll}} {{success=[[@{drive_auto_mdr}]]}} {{hard=[[floor(@{drive_auto_mdr}/2)]]}} {{extreme=[[floor(@{drive_auto_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_drive_auto_mdr_check"></button>
-                </div>
-                <div class="elecrepairn skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_elec_repair_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">전기수리(10%)</div>
-                    <input class="skill name" type="text" name="attr_elec_repair_mdr" value="10" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{elecrepair_txt}}} {{success=[[@{elec_repair_mdr}]]}} {{hard=[[floor(@{elec_repair_mdr}/2)]]}} {{extreme=[[floor(@{elec_repair_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_elec_repair_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{elecrepair_txt}}} {{success=[[@{elec_repair_mdr}]]}} {{hard=[[floor(@{elec_repair_mdr}/2)]]}} {{extreme=[[floor(@{elec_repair_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_elec_repair_mdr_check"></button>
-                </div>
-                <div class="electronics skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_electronics_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">전자기기(01%)</div>
-                    <input class="skill name" type="text" name="attr_electronics_mdr" value="01" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{electronics_txt}}} {{success=[[@{electronics_mdr}]]}} {{hard=[[floor(@{electronics_mdr}/2)]]}} {{extreme=[[floor(@{electronics_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_electronics_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{electronics_txt}}} {{success=[[@{electronics_mdr}]]}} {{hard=[[floor(@{electronics_mdr}/2)]]}} {{extreme=[[floor(@{electronics_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_electronics_mdr_check"></button>
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{listen_txt}}} {{success=[[@{listen_mdr}]]}} {{hard=[[floor(@{listen_mdr}/2)]]}} {{extreme=[[floor(@{listen_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_listen_mdr_check"></button>
                 </div>
                 <div class="fasttalk skillset">
                     <div>
@@ -990,20 +881,50 @@
                         value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{fasttalk_txt}}} {{success=[[@{fast_talk_mdr}]]}} {{hard=[[floor(@{fast_talk_mdr}/2)]]}} {{extreme=[[floor(@{fast_talk_mdr}/5)]]}} {{roll1=[[1d100]]}}"
                         name="roll_fast_talk_mdr_check"></button>
                 </div>
-                <div class="fighting(brawl) skillset">
+                <div class="charm skillset">
                     <div>
                         <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_fighting_brawl_mdr_checkbox" />
+                            name="attr_charm_mdr_checkbox" />
                         <div class="fake cb"></div>
                     </div>
-                    <div class="skill subtitle">근접전(격투)(25%)</div>
-                    <input class="skill name" type="text" name="attr_fighting_brawl_mdr" value="25" />
+                    <div class="skill subtitle">매혹(15%)</div>
+                    <input class="skill name" type="text" name="attr_charm_mdr" value="15" />
                     <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{fighting_brawl_txt}}} {{success=[[@{fighting_brawl_mdr}]]}} {{hard=[[floor(@{fighting_brawl_mdr}/2)]]}} {{extreme=[[floor(@{fighting_brawl_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_fighting_brawl_mdr_check"></button>
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{charm_txt}}} {{success=[[@{charm_mdr}]]}} {{hard=[[floor(@{charm_mdr}/2)]]}} {{extreme=[[floor(@{charm_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_charm_mdr_check"></button>
                     <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{fighting_brawl_txt}}} {{success=[[@{fighting_brawl_mdr}]]}} {{hard=[[floor(@{fighting_brawl_mdr}/2)]]}} {{extreme=[[floor(@{fighting_brawl_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_fighting_brawl_mdr_check"></button>
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{charm_txt}}} {{success=[[@{charm_mdr}]]}} {{hard=[[floor(@{charm_mdr}/2)]]}} {{extreme=[[floor(@{charm_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_charm_mdr_check"></button>
+                </div>
+                <div class="law skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_law_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">법률(05%)</div>
+                    <input class="skill name" type="text" name="attr_law_mdr" value="05" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{law_txt}}} {{success=[[@{law_mdr}]]}} {{hard=[[floor(@{law_mdr}/2)]]}} {{extreme=[[floor(@{law_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_law_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{law_txt}}} {{success=[[@{law_mdr}]]}} {{hard=[[floor(@{law_mdr}/2)]]}} {{extreme=[[floor(@{law_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_law_mdr_check"></button>
+                </div>
+                <div class="disguise skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_disguise_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">변장(05%)</div>
+                    <input class="skill name" type="text" name="attr_disguise_mdr" value="05" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{disguise_txt}}} {{success=[[@{disguise_mdr}]]}} {{hard=[[floor(@{disguise_mdr}/2)]]}} {{extreme=[[floor(@{disguise_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_disguise_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{disguise_txt}}} {{success=[[@{disguise_mdr}]]}} {{hard=[[floor(@{disguise_mdr}/2)]]}} {{extreme=[[floor(@{disguise_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_disguise_mdr_check"></button>
                 </div>
                 <div class="firearms(hg) skillset">
                     <div>
@@ -1050,234 +971,7 @@
                         value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name= @{firearms_smg_txt}}} {{success=[[@{firearms_smg_mdr}]]}} {{hard=[[floor(@{firearms_smg_mdr}/2)]]}} {{extreme=[[floor(@{firearms_smg_mdr}/5)]]}} {{roll1=[[1d100]]}}"
                         name="roll_firearms_smg_mdr_check"></button>
                 </div>
-            </div>
-            <!----줄바꿈---->
-            <div class="skill line2">
-                <div class="firstaid skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_first_aid_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">응급처치(30%)</div>
-                    <input class="skill name" type="text" name="attr_first_aid_mdr" value="30" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{firstaid_txt}}} {{success=[[@{first_aid_mdr}]]}} {{hard=[[floor(@{first_aid_mdr}/2)]]}} {{extreme=[[floor(@{first_aid_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_first_aid_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{firstaid_txt}}} {{success=[[@{first_aid_mdr}]]}} {{hard=[[floor(@{first_aid_mdr}/2)]]}} {{extreme=[[floor(@{first_aid_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_first_aid_mdr_check"></button>
-                </div>
-                <div class="history skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_history_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">역사(05%)</div>
-                    <input class="skill name" type="text" name="attr_history_mdr" value="05" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{history_txt}}} {{success=[[@{history_mdr}]]}} {{hard=[[floor(@{history_mdr}/2)]]}} {{extreme=[[floor(@{history_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_history_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{history_txt}}} {{success=[[@{history_mdr}]]}} {{hard=[[floor(@{history_mdr}/2)]]}} {{extreme=[[floor(@{history_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_history_mdr_check"></button>
-                </div>
-                <div class="intimidate skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_intimidate_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">위협(15%)</div>
-                    <input class="skill name" type="text" name="attr_intimidate_mdr" value="15" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{intimidate_txt}}} {{success=[[@{intimidate_mdr}]]}} {{hard=[[floor(@{intimidate_mdr}/2)]]}} {{extreme=[[floor(@{intimidate_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_intimidate_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{intimidate_txt}}} {{success=[[@{intimidate_mdr}]]}} {{hard=[[floor(@{intimidate_mdr}/2)]]}} {{extreme=[[floor(@{intimidate_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_intimidate_mdr_check"></button>
-                </div>
-                <div class="jump skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_jump_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">도약(20%)</div>
-                    <input class="skill name" type="text" name="attr_jump_mdr" value="20" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{jump_txt}}} {{success=[[@{jump_mdr}]]}} {{hard=[[floor(@{jump_mdr}/2)]]}} {{extreme=[[floor(@{jump_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_jump_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{jump_txt}}} {{success=[[@{jump_mdr}]]}} {{hard=[[floor(@{jump_mdr}/2)]]}} {{extreme=[[floor(@{jump_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_jump_mdr_check"></button>
-                </div>
-                <div class="language(own) skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_language_own_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">모국어(교육)</div>
-                    <input class="skill name" type="text" name="attr_language_own_mdr" value="00" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{language_own_txt}}} {{success=[[@{language_own_mdr}]]}} {{hard=[[floor(@{language_own_mdr}/2)]]}} {{extreme=[[floor(@{language_own_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_language_own_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{language_own_txt}}} {{success=[[@{language_own_mdr}]]}} {{hard=[[floor(@{language_own_mdr}/2)]]}} {{extreme=[[floor(@{language_own_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_language_own_mdr_check"></button>
-                </div>
-                <div class="law skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_law_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">법률(05%)</div>
-                    <input class="skill name" type="text" name="attr_law_mdr" value="05" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{law_txt}}} {{success=[[@{law_mdr}]]}} {{hard=[[floor(@{law_mdr}/2)]]}} {{extreme=[[floor(@{law_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_law_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{law_txt}}} {{success=[[@{law_mdr}]]}} {{hard=[[floor(@{law_mdr}/2)]]}} {{extreme=[[floor(@{law_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_law_mdr_check"></button>
-                </div>
-                <div class="libraryuse skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_library_use_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">자료조사(20%)</div>
-                    <input class="skill name" type="text" name="attr_library_use_mdr" value="20" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{libraryuse_txt}}} {{success=[[@{library_use_mdr}]]}} {{hard=[[floor(@{library_use_mdr}/2)]]}} {{extreme=[[floor(@{library_use_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_library_use_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{libraryuse_txt}}} {{success=[[@{library_use_mdr}]]}} {{hard=[[floor(@{library_use_mdr}/2)]]}} {{extreme=[[floor(@{library_use_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_library_use_mdr_check"></button>
-                </div>
-                <div class="listen skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_listen_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">듣기(25%)</div>
-                    <input class="skill name" type="text" name="attr_listen_mdr" value="25" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{listen_txt}}} {{success=[[@{listen_mdr}]]}} {{hard=[[floor(@{listen_mdr}/2)]]}} {{extreme=[[floor(@{listen_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_listen_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{listen_txt}}} {{success=[[@{listen_mdr}]]}} {{hard=[[floor(@{listen_mdr}/2)]]}} {{extreme=[[floor(@{listen_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_listen_mdr_check"></button>
-                </div>
-                <div class="locksmith skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_locksmith_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">열쇠공(01%)</div>
-                    <input class="skill name" type="text" name="attr_locksmith_mdr" value="01" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{locksmith_txt}}} {{success=[[@{locksmith_mdr}]]}} {{hard=[[floor(@{locksmith_mdr}/2)]]}} {{extreme=[[floor(@{locksmith_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_locksmith_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{locksmith_txt}}} {{success=[[@{locksmith_mdr}]]}} {{hard=[[floor(@{locksmith_mdr}/2)]]}} {{extreme=[[floor(@{locksmith_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_locksmith_mdr_check"></button>
-                </div>
-                <div class="mechrepair skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_mech_repair_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">기계수리(10%)</div>
-                    <input class="skill name" type="text" name="attr_mech_repair_mdr" value="10" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{mechrepair_txt}}} {{success=[[@{mech_repair_mdr}]]}} {{hard=[[floor(@{mech_repair_mdr}/2)]]}} {{extreme=[[floor(@{mech_repair_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_mech_repair_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{mechrepair_txt}}} {{success=[[@{mech_repair_mdr}]]}} {{hard=[[floor(@{mech_repair_mdr}/2)]]}} {{extreme=[[floor(@{mech_repair_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_mech_repair_mdr_check"></button>
-                </div>
-                <div class="medicine skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_medicine_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">의료(01%)</div>
-                    <input class="skill name" type="text" name="attr_medicine_mdr" value="01" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{medicine_txt}}} {{success=[[@{medicine_mdr}]]}} {{hard=[[floor(@{medicine_mdr}/2)]]}} {{extreme=[[floor(@{medicine_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_medicine_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{medicine_txt}}} {{success=[[@{medicine_mdr}]]}} {{hard=[[floor(@{medicine_mdr}/2)]]}} {{extreme=[[floor(@{medicine_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_medicine_mdr_check"></button>
-                </div>
-                <div class="naturalworld skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_natural_world_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">자연(10%)</div>
-                    <input class="skill name" type="text" name="attr_natural_world_mdr" value="10" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{naturalworld_txt}}} {{success=[[@{natural_world_mdr}]]}} {{hard=[[floor(@{natural_world_mdr}/2)]]}} {{extreme=[[floor(@{natural_world_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_natural_world_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{naturalworld_txt}}} {{success=[[@{natural_world_mdr}]]}} {{hard=[[floor(@{natural_world_mdr}/2)]]}} {{extreme=[[floor(@{natural_world_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_natural_world_mdr_check"></button>
-                </div>
-                <div class="navigate skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_navigate_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">항법(10%)</div>
-                    <input class="skill name" type="text" name="attr_navigate_mdr" value="10" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{navigate_txt}}} {{success=[[@{navigate_mdr}]]}} {{hard=[[floor(@{navigate_mdr}/2)]]}} {{extreme=[[floor(@{navigate_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_navigate_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{navigate_txt}}} {{success=[[@{navigate_mdr}]]}} {{hard=[[floor(@{navigate_mdr}/2)]]}} {{extreme=[[floor(@{navigate_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_navigate_mdr_check"></button>
-                </div>
-                <div class="occult skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_occult_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">오컬트(05%)</div>
-                    <input class="skill name" type="text" name="attr_occult_mdr" value="05" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{occult_txt}}} {{success=[[@{occult_mdr}]]}} {{hard=[[floor(@{occult_mdr}/2)]]}} {{extreme=[[floor(@{occult_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_occult_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{occult_txt}}} {{success=[[@{occult_mdr}]]}} {{hard=[[floor(@{occult_mdr}/2)]]}} {{extreme=[[floor(@{occult_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_occult_mdr_check"></button>
-                </div>
-                <div class="ophvmachine skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_op_hv_machine_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">중장비 조작(01%)</div>
-                    <input class="skill name" type="text" name="attr_op_hv_machine_mdr" value="01" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{ophvmachine_txt}}} {{success=[[@{op_hv_machine_mdr}]]}} {{hard=[[floor(@{op_hv_machine_mdr}/2)]]}} {{extreme=[[floor(@{op_hv_machine_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_op_hv_machine_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{ophvmachine_txt}}} {{success=[[@{op_hv_machine_mdr}]]}} {{hard=[[floor(@{op_hv_machine_mdr}/2)]]}} {{extreme=[[floor(@{op_hv_machine_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_op_hv_machine_mdr_check"></button>
-                </div>
+
                 <div class="persuade skillset">
                     <div>
                         <input type="checkbox" class="skill cb" class="skill cb" value="1"
@@ -1293,54 +987,6 @@
                         value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{persuade_txt}}} {{success=[[@{persuade_mdr}]]}} {{hard=[[floor(@{persuade_mdr}/2)]]}} {{extreme=[[floor(@{persuade_mdr}/5)]]}} {{roll1=[[1d100]]}}"
                         name="roll_persuade_mdr_check"></button>
                 </div>
-                <div class="psychology skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_psychology_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">심리학(10%)</div>
-                    <input class="skill name" type="text" name="attr_psychology_mdr" value="10" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{psychology_txt}}} {{success=[[@{psychology_mdr}]]}} {{hard=[[floor(@{psychology_mdr}/2)]]}} {{extreme=[[floor(@{psychology_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_psychology_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{psychology_txt}}} {{success=[[@{psychology_mdr}]]}} {{hard=[[floor(@{psychology_mdr}/2)]]}} {{extreme=[[floor(@{psychology_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_psychology_mdr_check"></button>
-                </div>
-                <div class="psychoanalysis skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_psychoanalysis_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">정신분석(01%)</div>
-                    <input class="skill name" type="text" name="attr_psychoanalysis_mdr" value="01" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{psychoanalysis_txt}}} {{success=[[@{psychoanalysis_mdr}]]}} {{hard=[[floor(@{psychoanalysis_mdr}/2)]]}} {{extreme=[[floor(@{psychoanalysis_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_psychoanalysis_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{psychoanalysis_txt}}} {{success=[[@{psychoanalysis_mdr}]]}} {{hard=[[floor(@{psychoanalysis_mdr}/2)]]}} {{extreme=[[floor(@{psychoanalysis_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_psychoanalysis_mdr_check"></button>
-                </div>
-                <div class="ride skillset">
-                    <div>
-                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_ride_mdr_checkbox" />
-                        <div class="fake cb"></div>
-                    </div>
-                    <div class="skill subtitle">승마(05%)</div>
-                    <input class="skill name" type="text" name="attr_ride_mdr" value="05" />
-                    <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{ride_txt}}} {{success=[[@{ride_mdr}]]}} {{hard=[[floor(@{ride_mdr}/2)]]}} {{extreme=[[floor(@{ride_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_ride_mdr_check"></button>
-                    <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}{{name=@{ride_txt}}} {{success=[[@{ride_mdr}]]}} {{hard=[[floor(@{ride_mdr}/2)]]}} {{extreme=[[floor(@{ride_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_ride_mdr_check"></button>
-                </div>
-            </div>
-            <!----줄바꿈---->
-            <div class="skill line3">
                 <div class="sleightofhand skillset">
                     <div>
                         <input type="checkbox" class="skill cb" class="skill cb" value="1"
@@ -1357,20 +1003,143 @@
                         value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{sleightofhand_txt}}} {{success=[[@{sleight_of_hand_mdr}]]}} {{hard=[[floor(@{sleight_of_hand_mdr}/2)]]}} {{extreme=[[floor(@{sleight_of_hand_mdr}/5)]]}} {{roll1=[[1d100]]}}"
                         name="roll_sleight_of_hand_mdr_check"></button>
                 </div>
-                <div class="spothidden skillset">
+                <div class="swim skillset">
                     <div>
                         <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_spot_hidden_mdr_checkbox" />
+                            name="attr_swim_mdr_checkbox" />
                         <div class="fake cb"></div>
                     </div>
-                    <div class="skill subtitle">관찰력(25%)</div>
-                    <input class="skill name" type="text" name="attr_spot_hidden_mdr" value="25" />
+                    <div class="skill subtitle">수영(20%)</div>
+                    <input class="skill name" type="text" name="attr_swim_mdr" value="20" />
                     <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{spothidden_txt}}} {{success=[[@{spot_hidden_mdr}]]}} {{hard=[[floor(@{spot_hidden_mdr}/2)]]}} {{extreme=[[floor(@{spot_hidden_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_spot_hidden_mdr_check"></button>
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{swim_txt}}} {{success=[[@{swim_mdr}]]}} {{hard=[[floor(@{swim_mdr}/2)]]}} {{extreme=[[floor(@{swim_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_swim_mdr_check"></button>
                     <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{spothidden_txt}}} {{success=[[@{spot_hidden_mdr}]]}} {{hard=[[floor(@{spot_hidden_mdr}/2)]]}} {{extreme=[[floor(@{spot_hidden_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_spot_hidden_mdr_check"></button>
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{swim_txt}}} {{success=[[@{swim_mdr}]]}} {{hard=[[floor(@{swim_mdr}/2)]]}} {{extreme=[[floor(@{swim_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_swim_mdr_check"></button>
+                </div>
+                <div class="ride skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_ride_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">승마(05%)</div>
+                    <input class="skill name" type="text" name="attr_ride_mdr" value="05" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{ride_txt}}} {{success=[[@{ride_mdr}]]}} {{hard=[[floor(@{ride_mdr}/2)]]}} {{extreme=[[floor(@{ride_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_ride_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}{{name=@{ride_txt}}} {{success=[[@{ride_mdr}]]}} {{hard=[[floor(@{ride_mdr}/2)]]}} {{extreme=[[floor(@{ride_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_ride_mdr_check"></button>
+                </div>
+                <div class="psychology skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_psychology_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">심리학(10%)</div>
+                    <input class="skill name" type="text" name="attr_psychology_mdr" value="10" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{psychology_txt}}} {{success=[[@{psychology_mdr}]]}} {{hard=[[floor(@{psychology_mdr}/2)]]}} {{extreme=[[floor(@{psychology_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_psychology_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{psychology_txt}}} {{success=[[@{psychology_mdr}]]}} {{hard=[[floor(@{psychology_mdr}/2)]]}} {{extreme=[[floor(@{psychology_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_psychology_mdr_check"></button>
+                </div>
+            </div>
+            <!----줄바꿈---->
+            <div class="skill line2">
+                <div class="language(own) skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_language_own_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">모국어(교육)</div>
+                    <input class="skill name" type="text" name="attr_language_own_mdr" value="00" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{language_own_txt}}} {{success=[[@{language_own_mdr}]]}} {{hard=[[floor(@{language_own_mdr}/2)]]}} {{extreme=[[floor(@{language_own_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_language_own_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{language_own_txt}}} {{success=[[@{language_own_mdr}]]}} {{hard=[[floor(@{language_own_mdr}/2)]]}} {{extreme=[[floor(@{language_own_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_language_own_mdr_check"></button>
+                </div>
+                <div class="history skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_history_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">역사(05%)</div>
+                    <input class="skill name" type="text" name="attr_history_mdr" value="05" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{history_txt}}} {{success=[[@{history_mdr}]]}} {{hard=[[floor(@{history_mdr}/2)]]}} {{extreme=[[floor(@{history_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_history_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{history_txt}}} {{success=[[@{history_mdr}]]}} {{hard=[[floor(@{history_mdr}/2)]]}} {{extreme=[[floor(@{history_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_history_mdr_check"></button>
+                </div>
+                <div class="locksmith skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_locksmith_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">열쇠공(01%)</div>
+                    <input class="skill name" type="text" name="attr_locksmith_mdr" value="01" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{locksmith_txt}}} {{success=[[@{locksmith_mdr}]]}} {{hard=[[floor(@{locksmith_mdr}/2)]]}} {{extreme=[[floor(@{locksmith_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_locksmith_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{locksmith_txt}}} {{success=[[@{locksmith_mdr}]]}} {{hard=[[floor(@{locksmith_mdr}/2)]]}} {{extreme=[[floor(@{locksmith_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_locksmith_mdr_check"></button>
+                </div>
+                <div class="climb skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_climb_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">오르기(20%)</div>
+                    <input class="skill name" type="text" name="attr_climb_mdr" value="20" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{climb_txt}}} {{success=[[@{climb_mdr}]]}} {{hard=[[floor(@{climb_mdr}/2)]]}} {{extreme=[[floor(@{climb_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_climb_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{climb_txt}}} {{success=[[@{climb_mdr}]]}} {{hard=[[floor(@{climb_mdr}/2)]]}} {{extreme=[[floor(@{climb_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_climb_mdr_check"></button>
+                </div>
+                <div class="occult skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_occult_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">오컬트(05%)</div>
+                    <input class="skill name" type="text" name="attr_occult_mdr" value="05" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{occult_txt}}} {{success=[[@{occult_mdr}]]}} {{hard=[[floor(@{occult_mdr}/2)]]}} {{extreme=[[floor(@{occult_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_occult_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{occult_txt}}} {{success=[[@{occult_mdr}]]}} {{hard=[[floor(@{occult_mdr}/2)]]}} {{extreme=[[floor(@{occult_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_occult_mdr_check"></button>
+                </div>
+                <div class="intimidate skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_intimidate_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">위협(15%)</div>
+                    <input class="skill name" type="text" name="attr_intimidate_mdr" value="15" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{intimidate_txt}}} {{success=[[@{intimidate_mdr}]]}} {{hard=[[floor(@{intimidate_mdr}/2)]]}} {{extreme=[[floor(@{intimidate_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_intimidate_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{intimidate_txt}}} {{success=[[@{intimidate_mdr}]]}} {{hard=[[floor(@{intimidate_mdr}/2)]]}} {{extreme=[[floor(@{intimidate_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_intimidate_mdr_check"></button>
                 </div>
                 <div class="stealth skillset">
                     <div>
@@ -1387,35 +1156,172 @@
                         value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{stealth_txt}}} {{success=[[@{stealth_mdr}]]}} {{hard=[[floor(@{stealth_mdr}/2)]]}} {{extreme=[[floor(@{stealth_mdr}/5)]]}} {{roll1=[[1d100]]}}"
                         name="roll_stealth_mdr_check"></button>
                 </div>
-                <div class="swim skillset">
+                <div class="firstaid skillset">
                     <div>
                         <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_swim_mdr_checkbox" />
+                            name="attr_first_aid_mdr_checkbox" />
                         <div class="fake cb"></div>
                     </div>
-                    <div class="skill subtitle">수영(20%)</div>
-                    <input class="skill name" type="text" name="attr_swim_mdr" value="20" />
+                    <div class="skill subtitle">응급처치(30%)</div>
+                    <input class="skill name" type="text" name="attr_first_aid_mdr" value="30" />
                     <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{swim_txt}}} {{success=[[@{swim_mdr}]]}} {{hard=[[floor(@{swim_mdr}/2)]]}} {{extreme=[[floor(@{swim_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_swim_mdr_check"></button>
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{firstaid_txt}}} {{success=[[@{first_aid_mdr}]]}} {{hard=[[floor(@{first_aid_mdr}/2)]]}} {{extreme=[[floor(@{first_aid_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_first_aid_mdr_check"></button>
                     <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{swim_txt}}} {{success=[[@{swim_mdr}]]}} {{hard=[[floor(@{swim_mdr}/2)]]}} {{extreme=[[floor(@{swim_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_swim_mdr_check"></button>
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{firstaid_txt}}} {{success=[[@{first_aid_mdr}]]}} {{hard=[[floor(@{first_aid_mdr}/2)]]}} {{extreme=[[floor(@{first_aid_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_first_aid_mdr_check"></button>
                 </div>
-                <div class="throw skillset">
+                <div class="medicine skillset">
                     <div>
                         <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_throw_mdr_checkbox" />
+                            name="attr_medicine_mdr_checkbox" />
                         <div class="fake cb"></div>
                     </div>
-                    <div class="skill subtitle">투척(20%)</div>
-                    <input class="skill name" type="text" name="attr_throw_mdr" value="20" />
+                    <div class="skill subtitle">의료(01%)</div>
+                    <input class="skill name" type="text" name="attr_medicine_mdr" value="01" />
                     <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{throw_txt}}} {{success=[[@{throw_mdr}]]}} {{hard=[[floor(@{throw_mdr}/2)]]}} {{extreme=[[floor(@{throw_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_throw_mdr_check"></button>
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{medicine_txt}}} {{success=[[@{medicine_mdr}]]}} {{hard=[[floor(@{medicine_mdr}/2)]]}} {{extreme=[[floor(@{medicine_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_medicine_mdr_check"></button>
                     <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{throw_txt}}} {{success=[[@{throw_mdr}]]}} {{hard=[[floor(@{throw_mdr}/2)]]}} {{extreme=[[floor(@{throw_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_throw_mdr_check"></button>
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{medicine_txt}}} {{success=[[@{medicine_mdr}]]}} {{hard=[[floor(@{medicine_mdr}/2)]]}} {{extreme=[[floor(@{medicine_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_medicine_mdr_check"></button>
+                </div>
+                <div class="anthropology skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" value="1" class="skill cb" value="1"
+                            name="attr_anthropology_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">인류학(01%)</div>
+                    <input class="skill name" type="text" name="attr_anthropology_mdr" value="01" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{anthropology_txt}}} {{success=[[@{anthropology_mdr}]]}} {{hard=[[floor(@{anthropology_mdr}/2)]]}} {{extreme=[[floor(@{anthropology_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_anthropology_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{anthropology_txt}}} {{success=[[@{anthropology_mdr}]]}} {{hard=[[floor(@{anthropology_mdr}/2)]]}} {{extreme=[[floor(@{anthropology_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_anthropology_mdr_check"></button>
+                </div>
+                <div class="driveauto skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_drive_auto_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">자동차 운전(20%)</div>
+                    <input class="skill name" type="text" name="attr_drive_auto_mdr" value="20" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{driveauto_txt} Roll}} {{success=[[@{drive_auto_mdr}]]}} {{hard=[[floor(@{drive_auto_mdr}/2)]]}} {{extreme=[[floor(@{drive_auto_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_drive_auto_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{driveauto_txt} Roll}} {{success=[[@{drive_auto_mdr}]]}} {{hard=[[floor(@{drive_auto_mdr}/2)]]}} {{extreme=[[floor(@{drive_auto_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_drive_auto_mdr_check"></button>
+                </div>
+                <div class="libraryuse skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_library_use_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">자료조사(20%)</div>
+                    <input class="skill name" type="text" name="attr_library_use_mdr" value="20" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{libraryuse_txt}}} {{success=[[@{library_use_mdr}]]}} {{hard=[[floor(@{library_use_mdr}/2)]]}} {{extreme=[[floor(@{library_use_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_library_use_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{libraryuse_txt}}} {{success=[[@{library_use_mdr}]]}} {{hard=[[floor(@{library_use_mdr}/2)]]}} {{extreme=[[floor(@{library_use_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_library_use_mdr_check"></button>
+                </div>
+                <div class="naturalworld skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_natural_world_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">자연(10%)</div>
+                    <input class="skill name" type="text" name="attr_natural_world_mdr" value="10" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{naturalworld_txt}}} {{success=[[@{natural_world_mdr}]]}} {{hard=[[floor(@{natural_world_mdr}/2)]]}} {{extreme=[[floor(@{natural_world_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_natural_world_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{naturalworld_txt}}} {{success=[[@{natural_world_mdr}]]}} {{hard=[[floor(@{natural_world_mdr}/2)]]}} {{extreme=[[floor(@{natural_world_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_natural_world_mdr_check"></button>
+                </div>
+                <div class="creditrating skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_creditrating_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">재력(00%)</div>
+                    <input class="skill name" type="text" name="attr_credit_rating_mdr" value="00" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{creditrating_txt}}} {{success=[[@{credit_rating_mdr}]]}} {{hard=[[floor(@{credit_rating_mdr}/2)]]}} {{extreme=[[floor(@{credit_rating_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_credit_rating_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{creditrating_txt}}} {{success=[[@{credit_rating_mdr}]]}} {{hard=[[floor(@{credit_rating_mdr}/2)]]}} {{extreme=[[floor(@{credit_rating_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_credit_rating_mdr_check"></button>
+                </div>
+                <div class="elecrepairn skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_elec_repair_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">전기수리(10%)</div>
+                    <input class="skill name" type="text" name="attr_elec_repair_mdr" value="10" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{elecrepair_txt}}} {{success=[[@{elec_repair_mdr}]]}} {{hard=[[floor(@{elec_repair_mdr}/2)]]}} {{extreme=[[floor(@{elec_repair_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_elec_repair_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{elecrepair_txt}}} {{success=[[@{elec_repair_mdr}]]}} {{hard=[[floor(@{elec_repair_mdr}/2)]]}} {{extreme=[[floor(@{elec_repair_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_elec_repair_mdr_check"></button>
+                </div>
+
+                <div class="electronics skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_electronics_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">전자기기(01%)</div>
+                    <input class="skill name" type="text" name="attr_electronics_mdr" value="01" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{electronics_txt}}} {{success=[[@{electronics_mdr}]]}} {{hard=[[floor(@{electronics_mdr}/2)]]}} {{extreme=[[floor(@{electronics_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_electronics_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{electronics_txt}}} {{success=[[@{electronics_mdr}]]}} {{hard=[[floor(@{electronics_mdr}/2)]]}} {{extreme=[[floor(@{electronics_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_electronics_mdr_check"></button>
+                </div>
+
+                <div class="psychoanalysis skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_psychoanalysis_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">정신분석(01%)</div>
+                    <input class="skill name" type="text" name="attr_psychoanalysis_mdr" value="01" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{psychoanalysis_txt}}} {{success=[[@{psychoanalysis_mdr}]]}} {{hard=[[floor(@{psychoanalysis_mdr}/2)]]}} {{extreme=[[floor(@{psychoanalysis_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_psychoanalysis_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{psychoanalysis_txt}}} {{success=[[@{psychoanalysis_mdr}]]}} {{hard=[[floor(@{psychoanalysis_mdr}/2)]]}} {{extreme=[[floor(@{psychoanalysis_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_psychoanalysis_mdr_check"></button>
+                </div>
+                <div class="ophvmachine skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_op_hv_machine_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">중장비 조작(01%)</div>
+                    <input class="skill name" type="text" name="attr_op_hv_machine_mdr" value="01" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{ophvmachine_txt}}} {{success=[[@{op_hv_machine_mdr}]]}} {{hard=[[floor(@{op_hv_machine_mdr}/2)]]}} {{extreme=[[floor(@{op_hv_machine_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_op_hv_machine_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{ophvmachine_txt}}} {{success=[[@{op_hv_machine_mdr}]]}} {{hard=[[floor(@{op_hv_machine_mdr}/2)]]}} {{extreme=[[floor(@{op_hv_machine_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_op_hv_machine_mdr_check"></button>
                 </div>
                 <div class="track skillset">
                     <div>
@@ -1432,21 +1338,123 @@
                         value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{track_txt}}} {{success=[[@{track_mdr}]]}} {{hard=[[floor(@{track_mdr}/2)]]}} {{extreme=[[floor(@{track_mdr}/5)]]}} {{roll1=[[1d100]]}}"
                         name="roll_track_mdr_check"></button>
                 </div>
-                <div class="Art/Craft skillset">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <!----줄바꿈---->
+            <div class="skill line3">
+
+
+                <div class="cthulhumythos skillset">
                     <div>
                         <input type="checkbox" class="skill cb" class="skill cb" value="1"
-                            name="attr_art/craft_mdr_checkbox" />
+                            name="attr_cthulhumythos_mdr_checkbox" />
                         <div class="fake cb"></div>
                     </div>
-                    <div class="skill subtitle">예술/공예(05%)</div>
-                    <input class="skill name" type="text" name="attr_art/craft_mdr" value="05" />
+                    <div class="skill subtitle">크툴루 신화(00%)</div>
+                    <input class="skill name" type="text" name="attr_cthulhu_mythos_mdr" value="0" placeholder="00" />
                     <button class="skill" type="roll"
-                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{art/craft_txt}}} {{success=[[@{art/craft_mdr}]]}} {{hard=[[floor(@{art/craft_mdr}/2)]]}} {{extreme=[[floor(@{art/craft_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
-                        name="roll_art/craft_mdr_check"></button>
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{cthulhumythos_txt}}} {{success=[[@{cthulhu_mythos_mdr}]]}} {{hard=[[floor(@{cthulhu_mythos_mdr}/2)]]}} {{extreme=[[floor(@{cthulhu_mythos_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_cthulhu_mythos_mdr_check"></button>
                     <button class="skill2" type="roll"
-                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{art/craft_txt}}} {{success=[[@{art/craft_mdr}]]}} {{hard=[[floor(@{art/craft_mdr}/2)]]}} {{extreme=[[floor(@{art/craft_mdr}/5)]]}} {{roll1=[[1d100]]}}"
-                        name="roll_art/craft_mdr_check"></button>
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{cthulhumythos_txt}}} {{success=[[@{cthulhu_mythos_mdr}]]}} {{hard=[[floor(@{cthulhu_mythos_mdr}/2)]]}} {{extreme=[[floor(@{cthulhu_mythos_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_cthulhu_mythos_mdr_check"></button>
                 </div>
+                <div class="computeruse skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_computer_use_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">컴퓨터사용(05%)</div>
+                    <input class="skill name" type="text" name="attr_computer_use_mdr" value="05" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{computeruse_txt}}} {{success=[[@{computer_use_mdr}]]}} {{hard=[[floor(@{computer_use_mdr}/2)]]}} {{extreme=[[floor(@{computer_use_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_computer_use_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{computeruse_txt}}} {{success=[[@{computer_use_mdr}]]}} {{hard=[[floor(@{computer_use_mdr}/2)]]}} {{extreme=[[floor(@{computer_use_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_computer_use_mdr_check"></button>
+                </div>
+
+
+                <div class="throw skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_throw_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">투척(20%)</div>
+                    <input class="skill name" type="text" name="attr_throw_mdr" value="20" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{throw_txt}}} {{success=[[@{throw_mdr}]]}} {{hard=[[floor(@{throw_mdr}/2)]]}} {{extreme=[[floor(@{throw_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_throw_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{throw_txt}}} {{success=[[@{throw_mdr}]]}} {{hard=[[floor(@{throw_mdr}/2)]]}} {{extreme=[[floor(@{throw_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_throw_mdr_check"></button>
+                </div>
+                <div class="navigate skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_navigate_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">항법(10%)</div>
+                    <input class="skill name" type="text" name="attr_navigate_mdr" value="10" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{navigate_txt}}} {{success=[[@{navigate_mdr}]]}} {{hard=[[floor(@{navigate_mdr}/2)]]}} {{extreme=[[floor(@{navigate_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_navigate_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{navigate_txt}}} {{success=[[@{navigate_mdr}]]}} {{hard=[[floor(@{navigate_mdr}/2)]]}} {{extreme=[[floor(@{navigate_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_navigate_mdr_check"></button>
+                </div>
+
+                <div class="dodge skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" class="skill cb" value="1"
+                            name="attr_dodge_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">회피(민첩/2)</div>
+                    <input class="skill name" type="text" name="attr_dodge_mdr" value="00" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc}{{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{dodge_txt}}} {{success=[[@{dodge_mdr}]]}} {{hard=[[floor(@{dodge_mdr}/2)]]}} {{extreme=[[floor(@{dodge_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_dodge_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{name=@{dodge_txt}}} {{success=[[@{dodge_mdr}]]}} {{hard=[[floor(@{dodge_mdr}/2)]]}} {{extreme=[[floor(@{dodge_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_dodge_mdr_check"></button>
+                </div>
+                <div class="accounting skillset">
+                    <div>
+                        <input type="checkbox" class="skill cb" value="1" name="attr_accounting_mdr_checkbox" />
+                        <div class="fake cb"></div>
+                    </div>
+                    <div class="skill subtitle">회계(05%)</div>
+                    <input class="skill name" type="text" name="attr_accounting_mdr" value="05" />
+                    <button class="skill" type="roll"
+                        value="&{template:coc} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{accounting_txt}}} {{success=[[@{accounting_mdr}]]}} {{hard=[[floor(@{accounting_mdr}/2)]]}} {{extreme=[[floor(@{accounting_mdr}/5)]]}} {{roll1=[[1d100]]}} {{roll2=[[1d100]]}} {{roll3=[[1d100]]}}"
+                        name="roll_accounting_mdr_check"></button>
+                    <button class="skill2" type="roll"
+                        value="&{template:coc-1} {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}}  {{cname=&ulcorn;@{character_name}&drcorn;의&nbsp;판정}} {{name=@{accounting_txt}}} {{success=[[@{accounting_mdr}]]}} {{hard=[[floor(@{accounting_mdr}/2)]]}} {{extreme=[[floor(@{accounting_mdr}/5)]]}} {{roll1=[[1d100]]}}"
+                        name="roll_accounting_mdr_check"></button>
+                </div>
+
+
                 <!----임의 스킬---->
                 <div class="other-skills skillset">
                     <div>
@@ -2170,7 +2178,7 @@
             <div class="sheet-skill">&#12304;{{name}}&#12305;</div>
         </div>
         <div class="sheet-section1">
-            <div class="sheet-guide">기준치 {{success}}/{{hard}}/{{extreme}}</div>
+            <div class="sheet-guide">기준치 <br /> {{success}}/{{hard}}/{{extreme}}</div>
             <div class="sheet-rolled"> 굴림 {{roll1}}</div>
         </div>
         <div class="sheet-section2">
@@ -2224,8 +2232,8 @@
             <div class="sheet-skill">{{name}}</div>
         </div>
         <div class="sheet-section1">
-            <div class="sheet-guide">기준치 {{success}}/{{hard}}/{{extreme}}</div>
-            <div class="sheet-rolled"> 굴림 {{roll1}}/ {{roll2}}/{{roll3}}</div>
+            <div class="sheet-guide">기준치 <br /> {{success}}/{{hard}}/{{extreme}}</div>
+            <div class="sheet-rolled"> 굴림 <br /> {{roll1}}/ {{roll2}}/{{roll3}}</div>
         </div>
         <div class="sheet-section2">
             <div class="sheet-pair">
@@ -3213,13 +3221,13 @@
             <div class="sheet-skill">&#12304;{{weaponname}}&#12305;</div>
         </div>
         <div class="sheet-section1">
-            <div class="sheet-guide">기준치 {{success}}/{{hard}}/{{extreme}}</div>
-            <div class="sheet-rolled">굴림 {{roll1}}/ {{roll2}}/{{roll3}}</div>
+            <div class="sheet-guide">기준치<br /> {{success}}/{{hard}}/{{extreme}}</div>
+            <div class="sheet-rolled">굴림 <br /> {{roll1}}/ {{roll2}}/{{roll3}}</div>
         </div>
         <div class="sheet-section2">
             <div class="sheet-pair">
                 <div class="sheet-pair-lable">
-                    +2 판정
+                    +2
                 </div>
                 <div class="sheet-pair-result">
                     {{#rollLess() roll2 roll1}}
@@ -3557,7 +3565,7 @@
             </div>
             <div class="sheet-pair">
                 <div class="sheet-pair-lable">
-                    +1 판정
+                    +1
                 </div>
                 <div class="sheet-pair-result">
                     {{#rollLess() roll2 roll1}}
@@ -3672,7 +3680,7 @@
             </div>
             <div class="sheet-pair">
                 <div class="sheet-pair-lable">
-                    +0 판정
+                    +0
                 </div>
                 <div class="sheet-pair-result">
                     {{#rollTotal() roll1 1}}
@@ -3713,7 +3721,7 @@
             </div>
             <div class="sheet-pair">
                 <div class="sheet-pair-lable">
-                    -1 판정
+                    -1
                 </div>
                 <div class="sheet-pair-result">
                     {{#rollGreater() roll2 roll1}}
@@ -3828,7 +3836,7 @@
             </div>
             <div class="sheet-pair">
                 <div class="sheet-pair-lable">
-                    -2 판정
+                    -2
                 </div>
                 <div class="sheet-pair-result">
                     {{#rollGreater() roll2 roll1}}
@@ -4181,7 +4189,7 @@
             <div class="sheet-skill">{{name}}</div>
         </div>
         <div class="sheet-section1">
-            <div class="divet-guide">기준치 {{success}}/{{hard}}/{{extreme}}</div>
+            <div class="divet-guide">기준치<br /> {{success}}/{{hard}}/{{extreme}}</div>
             <div class="sheet-rolled"> 굴림 {{roll1}}</div>
         </div>
         <div class="sheet-section2">
@@ -4194,17 +4202,17 @@
             {{/rollGreater() roll1 hard}}
             {{#rollBetween() roll1 2 hard}}
             {{#rollGreater() roll1 extreme}}
-            <div class="sheet-template_value2">어려운 성공</div>
+            <div class="sheet-template_value2">어려운<br />성공</div>
             {{/rollGreater() roll1 extreme}}
             {{#rollBetween() roll1 2 extreme}}
-            <div class="sheet-template_value2">극단적 성공</div>
+            <div class="sheet-template_value2">극단적<br />성공</div>
             {{/rollBetween() roll1 2 extreme}}
             {{/rollBetween() roll1 2 hard}}
             {{/rollBetween() roll1 2 success}}
             {{#rollGreater() roll1 success}}
             {{#rollGreater() success 49}}
             {{#rollTotal() roll1 100}}
-            <div class="sheet-template_value2"> 대실패</div>
+            <div class="sheet-template_value2">대실패</div>
             {{/rollTotal() roll1 100}}
             {{#rollLess() roll1 100}}
             <div class="sheet-template_value2">실패 </div>
@@ -4233,7 +4241,7 @@
             <div class="sheet-skill"> &#12304;{{weaponname}}&#12305;</div>
         </div>
         <div class="sheet-section1">
-            <div class="sheet-guide">기준치 {{success}}/{{hard}}/{{extreme}}</div>
+            <div class="sheet-guide">기준치 <br /> {{success}}/{{hard}}/{{extreme}}</div>
             <div class="sheet-rolled"> 굴림 {{roll1}}</div>
         </div>
         <div class="sheet-section2">
@@ -4246,10 +4254,10 @@
             {{/rollGreater() roll1 hard}}
             {{#rollBetween() roll1 2 hard}}
             {{#rollGreater() roll1 extreme}}
-            <div class="sheet-template_value2">어려운 성공</div>
+            <div class="sheet-template_value2">어려운<br />성공</div>
             {{/rollGreater() roll1 extreme}}
             {{#rollBetween() roll1 2 extreme}}
-            <div class="sheet-template_value2">극단적 성공</div>
+            <div class="sheet-template_value2">극단적<br />성공</div>
             {{/rollBetween() roll1 2 extreme}}
             {{/rollBetween() roll1 2 hard}}
             {{/rollBetween() roll1 2 success}}
