@@ -293,8 +293,7 @@ button[type="roll"].status1 {
 }
 /*체력---------------------------------------------------*/
 .hp.wrap {
-	margin-top: 0px;
-	margin-left: 0px;
+	margin-right: 0px;
 	padding-bottom: 0px;
 }
 .hp.title {
@@ -483,7 +482,7 @@ input.san.cmc::placeholder {
 
 /*마력---------------------------------------------------*/
 .mp.wrap {
-	margin-left: 0px;
+	margin-right: 0px;
 	margin-top: 0px;
 	padding-bottom: 0px;
 }
@@ -883,10 +882,7 @@ button[type="roll"].ATK2 {
 	margin: 1px !important;
 }
 /* 장비와 소지품-------------------------------------------- */
-.gear_poss.wrap {
-	background: transparent;
-	padding: 0px;
-	margin: 0px;
+.gear_poss {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
