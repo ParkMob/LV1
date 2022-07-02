@@ -11,13 +11,13 @@
 	font-weight: 300;
 	font-style: normal;
 }
-
 @font-face {
-	font-family: "EliceDigitalBaeum_Bold";
-	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff") format("woff");
-	font-weight: normal;
+	font-family: "EliceDigitalBaeum_Regular";
+	src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Regular.woff2") format("woff2");
+	font-weight: 400;
 	font-style: normal;
 }
+
 @font-face {
 	font-family: "NanumBarunGothic";
 	font-style: normal;
@@ -25,6 +25,7 @@
 	src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
 	src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix") format("embedded-opentype"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff") format("woff"), url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf") format("truetype");
 }
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
 /*배경/기본 ---------------------------------------------------*/
 .charsheet.bind hr {
 	margin: 0px;
@@ -1195,27 +1196,33 @@ button[type="roll"].smallbutton-roll {
 	max-width: 350px;
 	width: 100%;
 	text-align: center;
-	font-family: "NanumBarunGothic";
+	font-family: "EliceDigitalBaeum_Regular";
 	color: white;
+
+	overflow: hidden;
+	background-color: #1c1c20;
+	border-radius: 1px;
+	font-size: 11px;
 }
 .sheet-rolltemplate-coc-dice-roll div.sheet-top {
-	background-color: #1c1c20;
-	border-top: 2px solid #004dff;
-
 	padding: 1px 10px;
 	text-align: left;
 	letter-spacing: 1px;
-	font-size: 11px;
 }
 .sheet-rolltemplate-coc-dice-roll div.sheet-body {
-	border: 1px solid rgb(0, 0, 0);
-	background-color: #35353b;
+}
+.sheet-rolltemplate-coc-dice-roll div.sheet-bodydeco-head {
+}
+.sheet-rolltemplate-coc-dice-roll div.sheet-bodydeco-head > img.sheet-TEMLG {
+	width: 50%;
+	margin-top: -25px;
 }
 .sheet-rolltemplate-coc-dice-roll div.sheet-result {
-	font-size: 18px;
-	color: rgb(183 0 0);
+	font-size: 25px;
 	text-shadow: 1px 1px 8px rgb(0 0 0), 1px 1px 10px #000;
-	margin: 20px;
+}
+.sheet-rolltemplate-coc-dice-roll div.sheet-bodydeco-foot {
+	padding-bottom: 15px;
 }
 .sheet-rolltemplate-coc-dice-roll .inlinerollresult,
 .sheet-rolltemplate-coc-dice-roll .inlinerollresult.fullcrit,
@@ -1235,30 +1242,32 @@ button[type="roll"].smallbutton-roll {
 	width: 100%;
 	text-align: center;
 	color: white;
+
+	overflow: hidden;
+	background-color: #1c1c20;
+	border-radius: 1px;
+	font-size: 11px;
 }
 .sheet-rolltemplate-coc-body-hit-loc div.sheet-top {
-	background-color: #1c1c20;
-	border-top: 2px solid #004dff;
-
 	padding: 1px 10px;
 	text-align: left;
 	letter-spacing: 1px;
-	font-size: 11px;
 }
 .sheet-rolltemplate-coc-body-hit-loc div.sheet-body {
-	border: 1px solid rgb(0, 0, 0);
-	background-color: #35353b;
+}
+.sheet-rolltemplate-coc-body-hit-loc div.sheet-bodydeco-head {
+}
+.sheet-rolltemplate-coc-body-hit-loc div.sheet-bodydeco-head > img.sheet-TEMLG {
+	width: 50%;
+	margin-top: -25px;
 }
 .sheet-rolltemplate-coc-body-hit-loc div.sheet-section1 {
 	font-size: 12px;
 	color: #c4c4c4;
-	margin-top: 20px;
 }
 .sheet-rolltemplate-coc-body-hit-loc div.sheet-section2 {
-	font-size: 18px;
-	color: rgb(183 0 0);
+	font-size: 25px;
 	text-shadow: 1px 1px 8px rgb(0 0 0), 1px 1px 10px #000;
-	margin-bottom: 20px;
 }
 .sheet-rolltemplate-coc-body-hit-loc .inlinerollresult,
 .sheet-rolltemplate-coc-body-hit-loc .inlinerollresult.fullcrit,
@@ -1267,7 +1276,9 @@ button[type="roll"].smallbutton-roll {
 	background-color: transparent;
 	border: none;
 }
-
+.sheet-rolltemplate-coc-body-hit-loc div.sheet-bodydeco-foot {
+	padding-bottom: 15px;
+}
 .sheet-rolltemplate-coc-body-hit-loc .inlinerollresult.showtip.tipsy-n-right {
 	background-color: transparent !important;
 	border: none !important;
@@ -1277,23 +1288,31 @@ button[type="roll"].smallbutton-roll {
 	max-width: 350px;
 	width: 100%;
 	text-align: center;
-	font-family: "NanumBarunGothic";
+	font-family: "EliceDigitalBaeum_Regular";
 	color: white;
+
+	overflow: hidden;
+	background-color: #1c1c20;
+	border-radius: 1px;
+	font-size: 11px;
 }
 
 /*메인*/
 .sheet-rolltemplate-coc-bomadness-rt div.sheet-body {
-	background-image: url(https://i.imgur.com/WWkyHgZ.png);
-	background-color: #1c1c20;
+	background-image: url(https://imgsrv.roll20.net/?src=https%3A//i.imgur.com/WWkyHgZ.png);
 	background-repeat: no-repeat;
-	background-size: cover;
 	background-size: contain;
 	background-position: center;
-
-	padding: 15px 0px;
-	border: 1px solid rgb(0, 0, 0);
+	overflow: hidden;
 }
 
+.sheet-rolltemplate-coc-bomadness-rt div.sheet-bodydeco-head {
+	padding-top: 15px;
+}
+.sheet-rolltemplate-coc-bomadness-rt div.sheet-bodydeco-head > img.sheet-TEMLG {
+	width: 50%;
+	margin-top: -25px;
+}
 .sheet-rolltemplate-coc-bomadness-rt div.sheet-lable {
 	font-size: 10px;
 	text-align: left;
@@ -1312,7 +1331,6 @@ button[type="roll"].smallbutton-roll {
 }
 .sheet-rolltemplate-coc-bomadness-rt div.sheet-description {
 	text-align: left;
-	font-size: 11px;
 	margin: 10px;
 	background: rgb(0 0 0 / 50%);
 	border-radius: 10px;
@@ -1322,10 +1340,7 @@ button[type="roll"].smallbutton-roll {
 }
 .sheet-rolltemplate-coc-bomadness-rt div.sheet-foot {
 	text-align: left;
-	font-size: 12px;
-	background-color: rgb(48 0 254);
-	border-bottom-right-radius: 1px;
-	border-bottom-left-radius: 1px;
+	padding: 2px 10px;
 	padding: 2px 10px;
 }
 /*디폴트*/
@@ -1345,17 +1360,29 @@ button[type="roll"].smallbutton-roll {
 	max-width: 350px;
 	width: 100%;
 	text-align: center;
-	font-family: "NanumBarunGothic";
+	font-family: "EliceDigitalBaeum_Regular";
 	color: white;
+
+	overflow: hidden;
+	background-color: #1c1c20;
+	border-radius: 1px;
+	font-size: 11px;
 }
 /*메인*/
 .sheet-rolltemplate-coc-bomadness-summ div.sheet-body {
 	background-image: url(https://i.imgur.com/WWkyHgZ.png);
-	background-color: #1c1c20;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-size: contain;
 	background-position: center;
+}
+.sheet-rolltemplate-coc-bomadness-summ div.sheet-bodydeco-head {
+	padding-top: 15px;
+}
+
+.sheet-rolltemplate-coc-bomadness-summ div.sheet-bodydeco-head > img.sheet-TEMLG {
+	width: 50%;
+	margin-top: -25px;
 }
 
 .sheet-rolltemplate-coc-bomadness-summ div.sheet-lable {
@@ -1376,13 +1403,15 @@ button[type="roll"].smallbutton-roll {
 }
 .sheet-rolltemplate-coc-bomadness-summ div.sheet-description {
 	text-align: left;
-	font-size: 11px;
 	margin: 10px;
 	background: rgb(0 0 0 / 50%);
 	border-radius: 10px;
 	border: 1px solid black;
 	color: #b9b9b9;
 	padding: 5px;
+}
+.sheet-rolltemplate-coc-bomadness-summ div.sheet-bodydeco-foot {
+	padding-bottom: 15px;
 }
 /*디폴트*/
 .sheet-rolltemplate-coc-bomadness-summ .inlinerollresult,
@@ -1396,33 +1425,32 @@ button[type="roll"].smallbutton-roll {
 	background-color: transparent !important;
 	border: none !important;
 }
-/* 기능치/보너스 롤테이블 ---------------------------------------------------*/
 
+/* 기능치/보너스 롤테이블 ---------------------------------------------------*/
 .sheet-rolltemplate-coc {
 	max-width: 350px;
 	width: 100%;
 	text-align: center;
-	font-family: "NanumBarunGothic";
+	font-family: "EliceDigitalBaeum_Regular";
 	color: white;
+
+	overflow: hidden;
+	background-color: #1c1c20;
+	border-radius: 1px;
+	font-size: 11px;
 }
 /*상단*/
 .sheet-rolltemplate-coc div.sheet-top {
-	background-color: #1c1c20;
-	border-top: 2px solid #004dff;
-
 	padding: 1px 10px;
 	text-align: left;
 	letter-spacing: 1px;
-	font-size: 11px;
 }
 /*메인*/
 .sheet-rolltemplate-coc div.sheet-body {
 	display: grid;
 	grid-template-columns: 1.25fr 1fr;
 	align-items: center;
-
 	background-image: url(https://i.imgur.com/WWkyHgZ.png);
-	background-color: #1c1c20;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -1440,15 +1468,12 @@ button[type="roll"].smallbutton-roll {
 	align-self: end;
 }
 .sheet-rolltemplate-coc div.sheet-skill {
-	color: #004dff;
+	color: #0017ff;
 	font-size: 16px;
 	letter-spacing: 4px;
-	font-family: "EliceDigitalBaeum_Bold";
 }
 .sheet-rolltemplate-coc div.sheet-section1 {
 	grid-area: 3/2;
-	font-size: 11px;
-	font-family: "NanumBarunGothic";
 	align-self: start;
 }
 .sheet-rolltemplate-coc div.sheet-guide {
@@ -1491,10 +1516,7 @@ button[type="roll"].smallbutton-roll {
 /* 하단 */
 .sheet-rolltemplate-coc div.sheet-foot {
 	text-align: left;
-	font-size: 12px;
-	background-color: rgb(48 0 254);
-	border-bottom-right-radius: 1px;
-	border-bottom-left-radius: 1px;
+	padding: 2px 10px;
 	padding: 2px 10px;
 }
 /*디폴트*/
@@ -1524,16 +1546,17 @@ button[type="roll"].smallbutton-roll {
 	width: 100%;
 	text-align: center;
 	color: white;
+
+	overflow: hidden;
+	background-color: #1c1c20;
+	border-radius: 1px;
+	font-size: 11px;
 }
 /*상단*/
 .sheet-rolltemplate-coc-attack div.sheet-top {
-	background-color: #1c1c20;
-	border-top: 2px solid #004dff;
-
 	padding: 1px 10px;
 	text-align: left;
 	letter-spacing: 1px;
-	font-size: 11px;
 }
 /*메인*/
 
@@ -1541,9 +1564,7 @@ button[type="roll"].smallbutton-roll {
 	display: grid;
 	grid-template-columns: 1.25fr 1fr;
 	align-items: center;
-
 	background-image: url(https://i.imgur.com/WWkyHgZ.png);
-	background-color: #1c1c20;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -1562,14 +1583,12 @@ button[type="roll"].smallbutton-roll {
 }
 
 .sheet-rolltemplate-coc-attack div.sheet-skill {
-	color: #004dff;
+	color: #0017ff;
 	font-size: 16px;
 	letter-spacing: 4px;
-	font-family: "EliceDigitalBaeum_Bold";
 }
 .sheet-rolltemplate-coc-attack div.sheet-section1 {
 	grid-area: 3/2;
-	font-size: 11px;
 	align-self: start;
 }
 .sheet-rolltemplate-coc-attack div.sheet-guide {
@@ -1602,17 +1621,14 @@ button[type="roll"].smallbutton-roll {
 .sheet-rolltemplate-coc-attack div.sheet-pair-result {
 	color: #ffffff;
 }
-.sheet-rolltemplate-coc div.sheet-bodydeco-foot {
+.sheet-rolltemplate-coc-attack div.sheet-bodydeco-foot {
 	grid-area: 4/1/5/3;
 	margin-top: -5px;
 }
 /* 하단 */
 .sheet-rolltemplate-coc-attack div.sheet-foot {
 	text-align: left;
-	font-size: 12px;
-	background-color: rgb(48 0 254);
-	border-bottom-right-radius: 1px;
-	border-bottom-left-radius: 1px;
+	padding: 2px 10px;
 	padding: 2px 10px;
 }
 /*디폴트*/
@@ -1641,18 +1657,19 @@ button[type="roll"].smallbutton-roll {
 	max-width: 350px;
 	width: 100%;
 	text-align: center;
-	font-family: "NanumBarunGothic";
+	font-family: "EliceDigitalBaeum_Regular";
 	color: white;
+
+	overflow: hidden;
+	background-color: #1c1c20;
+	border-radius: 1px;
+	font-size: 11px;
 }
 /*상단*/
 .sheet-rolltemplate-coc-1 div.sheet-top {
-	background-color: #1c1c20;
-	border-top: 2px solid #004dff;
-
 	padding: 1px 10px;
 	text-align: left;
 	letter-spacing: 1px;
-	font-size: 11px;
 }
 /*메인*/
 .sheet-rolltemplate-coc-1 div.sheet-body {
@@ -1661,7 +1678,6 @@ button[type="roll"].smallbutton-roll {
 	align-items: center;
 
 	background-image: url(https://i.imgur.com/WWkyHgZ.png);
-	background-color: #1c1c20;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
@@ -1678,10 +1694,9 @@ button[type="roll"].smallbutton-roll {
 	grid-area: 2/2;
 }
 .sheet-rolltemplate-coc-1 div.sheet-skill {
-	color: #004dff;
+	color: #0017ff;
 	font-size: 16px;
 	letter-spacing: 4px;
-	font-family: "EliceDigitalBaeum_Bold";
 }
 
 .sheet-rolltemplate-coc-1 div.sheet-section1 {
@@ -1702,10 +1717,13 @@ button[type="roll"].smallbutton-roll {
 	grid-area: 2/1/4/2;
 }
 .sheet-rolltemplate-coc-1 div.sheet-template_value1 {
+	font-family: "Smooch";
+	font-size: 50px;
+	color: #3003ee;
 }
 .sheet-rolltemplate-coc-1 div.sheet-template_value2 {
-	font-family: "S-CoreDream-4Regular";
 	font-size: 20px;
+	text-shadow: 0 0 2px black;
 }
 .sheet-rolltemplate-coc-1 div.sheet-bodydeco-foot {
 	grid-area: 4/1/5/3;
@@ -1732,18 +1750,19 @@ button[type="roll"].smallbutton-roll {
 	max-width: 350px;
 	width: 100%;
 	text-align: center;
-	font-family: "NanumBarunGothic";
+	font-family: "EliceDigitalBaeum_Regular";
 	color: white;
+
+	overflow: hidden;
+	background-color: #1c1c20;
+	border-radius: 1px;
+	font-size: 11px;
 }
 /*상단*/
 .sheet-rolltemplate-coc-attack-1 div.sheet-top {
-	background-color: #1c1c20;
-	border-top: 2px solid #004dff;
-
 	padding: 1px 10px;
 	text-align: left;
 	letter-spacing: 1px;
-	font-size: 11px;
 }
 /*메인*/
 .sheet-rolltemplate-coc-attack-1 div.sheet-body {
@@ -1752,11 +1771,11 @@ button[type="roll"].smallbutton-roll {
 	align-items: center;
 
 	background-image: url(https://i.imgur.com/WWkyHgZ.png);
-	background-color: #1c1c20;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
 }
+
 .sheet-rolltemplate-coc-attack-1 div.sheet-bodydeco-head {
 	grid-area: 1/1/2/3;
 }
@@ -1769,10 +1788,9 @@ button[type="roll"].smallbutton-roll {
 }
 
 .sheet-rolltemplate-coc-attack-1 div.sheet-skill {
-	color: #004dff;
+	color: #0017ff;
 	font-size: 16px;
 	letter-spacing: 4px;
-	font-family: "EliceDigitalBaeum_Bold";
 }
 .sheet-rolltemplate-coc-attack-1 div.sheet-section1 {
 	font-size: 12px;
@@ -1792,10 +1810,13 @@ button[type="roll"].smallbutton-roll {
 	grid-area: 2/1/4/2;
 }
 .sheet-rolltemplate-coc-attack-1 div.sheet-template_value1 {
+	font-family: "Smooch";
+	font-size: 50px;
+	color: #3003ee;
 }
 .sheet-rolltemplate-coc-attack-1 div.sheet-template_value2 {
-	font-family: "S-CoreDream-4Regular";
 	font-size: 20px;
+	text-shadow: 0 0 2px black;
 }
 .sheet-rolltemplate-coc-attack-1 div.sheet-bodydeco-foot {
 	grid-area: 4/1/5/3;
@@ -1807,10 +1828,7 @@ button[type="roll"].smallbutton-roll {
 /*하단*/
 .sheet-rolltemplate-coc-attack-1 div.sheet-foot {
 	text-align: left;
-	font-size: 12px;
-	background-color: rgb(48 0 254);
-	border-bottom-right-radius: 1px;
-	border-bottom-left-radius: 1px;
+	padding: 2px 10px;
 	padding: 2px 10px;
 }
 /*디폴트*/
@@ -1830,18 +1848,19 @@ button[type="roll"].smallbutton-roll {
 	max-width: 350px;
 	width: 100%;
 	text-align: center;
-	font-family: "NanumBarunGothic";
+	font-family: "EliceDigitalBaeum_Regular";
 	color: white;
+
+	overflow: hidden;
+	background-color: #1c1c20;
+	border-radius: 1px;
+	font-size: 11px;
 }
 /*상단*/
 .sheet-rolltemplate-coc-minionattack div.sheet-top {
-	background-color: #1c1c20;
-	border-top: 2px solid #004dff;
-
 	padding: 1px 10px;
 	text-align: left;
 	letter-spacing: 1px;
-	font-size: 11px;
 }
 /*메인*/
 .sheet-rolltemplate-coc-minionattack div.sheet-body {
@@ -1850,16 +1869,15 @@ button[type="roll"].smallbutton-roll {
 	align-items: center;
 
 	background-image: url(https://i.imgur.com/WWkyHgZ.png);
-	background-color: #1c1c20;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
 }
 
-.sheet-rolltemplate-coc-minionattack1 div.sheet-bodydeco-head {
+.sheet-rolltemplate-coc-minionattack div.sheet-bodydeco-head {
 	grid-area: 1/1/2/3;
 }
-.sheet-rolltemplate-coc-minionattack1 div.sheet-bodydeco-head > img.sheet-TEMLG {
+.sheet-rolltemplate-coc-minionattack div.sheet-bodydeco-head > img.sheet-TEMLG {
 	width: 50%;
 	margin-top: -25px;
 }
@@ -1868,11 +1886,9 @@ button[type="roll"].smallbutton-roll {
 }
 
 .sheet-rolltemplate-coc-minionattack div.sheet-skill {
-	margin: 10px 0px;
-	color: #004dff;
+	color: #0017ff;
 	font-size: 16px;
 	letter-spacing: 4px;
-	font-family: "EliceDigitalBaeum_Bold";
 }
 .sheet-rolltemplate-coc-minionattack div.sheet-section1 {
 	font-size: 12px;
@@ -1892,12 +1908,15 @@ button[type="roll"].smallbutton-roll {
 	grid-area: 2/1/4/2;
 }
 .sheet-rolltemplate-coc-minionattack div.sheet-template_value1 {
+	font-family: "Smooch";
+	font-size: 50px;
+	color: #3003ee;
 }
 .sheet-rolltemplate-coc-minionattack div.sheet-template_value2 {
-	font-family: "S-CoreDream-4Regular";
 	font-size: 20px;
+	text-shadow: 0 0 2px black;
 }
-.sheet-rolltemplate-coc-minionattack1 div.sheet-bodydeco-foot {
+.sheet-rolltemplate-coc-minionattack div.sheet-bodydeco-foot {
 	grid-area: 4/1/5/3;
 	margin-top: -5px;
 }
@@ -1906,10 +1925,7 @@ button[type="roll"].smallbutton-roll {
 /*하단*/
 .sheet-rolltemplate-coc-minionattack div.sheet-foot {
 	text-align: left;
-	font-size: 12px;
-	background-color: rgb(48 0 254);
-	border-bottom-right-radius: 1px;
-	border-bottom-left-radius: 1px;
+	padding: 2px 10px;
 	padding: 2px 10px;
 }
 /*디폴트*/

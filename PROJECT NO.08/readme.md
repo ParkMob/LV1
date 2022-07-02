@@ -32,4 +32,4 @@
 
 # 완성물
 
-![PROJECT NO8](- "PROJECT NO8")
+![PROJECT NO8](https://i.imgur.com/OK8glwb.jpg "PROJECT NO8")
