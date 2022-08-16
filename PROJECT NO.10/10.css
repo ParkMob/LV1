@@ -71,8 +71,8 @@
 /*디폴트 스타일 값 ---------------------------------------------------*/
 .charsheet {
 	background-image: url();
-	color: #f1f1f1;
-	background-color: #252527;
+	color: #1e1e1e;
+	background-color: #ebebeb;
 	border: solid rgb(0, 0, 0) 1px;
 	font-family: "Chosunilbo_myungjo";
 	font-weight: bold;
@@ -81,20 +81,20 @@
 
 	background-repeat: no-repeat;
 	background-size: contain;
-	width: 830px;
+	width: 850px;
+	padding: 0px !important;
 	position: absolute;
 }
 .charsheet .bind {
 }
 .wrap {
-	background: rgb(11 11 22 / 75%);
-	border: 1px solid rgb(255, 255, 255);
-	border-radius: 5px;
-	margin: 5px;
-	padding: 10px;
-
 	display: grid;
 	align-items: center;
+
+	border-radius: 2px;
+	padding: 10px;
+
+	background: #d6d6d6;
 }
 
 /*옵션 ---------------------------------------------------*/
@@ -116,8 +116,8 @@
 }
 .charsheet input {
 	text-align: center;
-	background-color: transparent;
-	color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #323232;
 	border: none;
 	font-size: 12px;
 }
@@ -235,7 +235,7 @@ input.DYINGT[value="2"]:checked ~ img.avater {
 /*메인 그리드1---------------------------------------------------*/
 .basic1 {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	margin-bottom: 20px;
 }
 
@@ -253,14 +253,14 @@ input.DYINGT[value="2"]:checked ~ img.avater {
 }
 input.info {
 	width: 100%;
+	border-radius: 0px;
 	border-bottom: 1px solid;
 	border-left: medium none;
 	border-right: medium none;
 	border-top: medium none;
-	border-radius: 0px;
-	border-image: radial-gradient(circle, rgba(0, 42, 255, 1) 0%, rgba(0, 20, 120, 1) 91%, rgba(0, 0, 0, 1) 100%);
+
 	background: transparent;
-	border-image-slice: 1;
+	/*border-image: radial-gradient(circle, rgba(0, 42, 255, 1) 0%, rgba(0, 20, 120, 1) 91%, rgba(0, 0, 0, 1) 100%);*/
 }
 /*특성치 ---------------------------------------------------*/
 .status.wrap {
@@ -270,14 +270,13 @@ input.info {
 }
 .status.box {
 	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 	row-gap: 2px;
-	display: grid;
-	row-gap: 5px;
 }
 .status.section {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 20px;
+	grid-gap: 10px;
 }
 .status.innergrid {
 	display: grid;
@@ -289,7 +288,7 @@ input.info {
 	font-size: 10px;
 }
 input.status {
-	width: 70px;
+	width: 50px;
 	height: 35px !important;
 	margin: 0px 5px;
 	justify-self: center;
@@ -716,7 +715,7 @@ input.skill.name {
 	margin-right: 5px !important;
 	width: 45px;
 	margin-right: 5px !important;
-	background: rgb(0 0 0 / 50%);
+	background: rgba(255, 255, 255, 0.5);
 }
 input.skill.name.additional {
 	border: none;
