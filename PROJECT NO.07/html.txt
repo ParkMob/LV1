@@ -1757,6 +1757,45 @@
             </fieldset>
         </div>
     </div>
+    <!----장비/소지품---->
+    <input type="checkbox" style="display:none" class="shift_page_gear" name="attr_page" value="1" />
+    <div class="gear_poss wrap">
+        <div class='gear wrap'>
+            <div class="gear title">
+                · 장비와 소지품 ·
+            </div>
+            <div class="gear box">
+                <div class="gear section1">
+                    <div class="gear subtitle">· 장비 ·</div>
+                    <textarea name="attr_equip" class="EQUIP"></textarea>
+                </div>
+                <div class="gear section2">
+                    <div class="gear subtitle">· 소지품 ·</div>
+                    <textarea name="attr_belong" class="BELONG"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class='poss wrap'>
+            <div class="poss title">
+                ·현금과 자산 ·
+            </div>
+            <div class="poss box">
+                <div class="poss section1">
+                    <div class="poss subtitle">· 소비 수준 </div>
+                    <input type="text" name="attr_spending_lv" class="SPEND" />
+                </div>
+                <div class="poss section1">
+                    <div class="poss subtitle">· 현금 </div>
+                    <input type="text" name="attr_cash" class="CASH" />
+                </div>
+            </div>
+            <div class="poss section2">
+                <div class="poss subtitle">· 자산 ·</div>
+                <textarea name="attr_assets" class="ASSET"></textarea>
+            </div>
+        </div>
+    </div>
+
     <!----백스토리---->
     <input type="checkbox" style="display:none" class="shift_page_bg" name="attr_page" value="2" />
     <div class="backstory wrap">
@@ -1764,59 +1803,87 @@
             · 백그라운드 스토리 ·
         </div>
         <div class='backstory box'>
-            <div class='BACKSTORY-vertical1'>
-                <span>
-                    겉보기
-                </span>
-                <textarea name="attr_personal_description" class="backstory-box"></textarea>
-                <span>
-                    사상/신념
-                </span>
-                <textarea name="attr_ideaology_beliefs" class="backstory-box"> </textarea>
-                <span>
-                    중요한 사람들
-                </span>
-                <textarea name="attr_significant_people" class="backstory-box"> </textarea>
-                <span>
-                    의미있는 장소들
-                </span>
-                <textarea name="attr_meaningful_locations" class="backstory-box"></textarea>
-                <span>
-                    소중한 물건들
-                </span>
-                <textarea name="attr_treasured_posessions" class="backstory-box"></textarea>
+
+            <div class="backstory sub-box">
+                <div>
+                    <span>
+                        겉보기
+                    </span>
+                    <textarea name="attr_personal_description" class="backstory-box"></textarea>
+                </div>
+                <div>
+                    <span>
+                        성격
+                    </span>
+                    <textarea name="attr_traits" class="backstory-box"></textarea>
+                </div>
             </div>
-            <div class='BACKSTORY-vertical2'>
-                <span>
-                    성격
-                </span>
-                <textarea name="attr_traits" class="backstory-box"></textarea>
-                <span>
-                    부상과 흉터
-                </span>
-                <textarea name="attr_injuries_scars" class="backstory-box"></textarea>
-                <span>
-                    공포증과 집착증
-                </span>
-                <textarea name="attr_phobias_manias" class="backstory-box"></textarea>
-                <span>
-                    신화서, 주문, 유물
-                </span>
-                <textarea name="attr_tomes_spells_artifacts" class="backstory-box"></textarea>
-                <span>
-                    기이한 존재들과의 만남
-                </span>
-                <textarea name="attr_encounters_with_strange_entities" class="backstory-box"></textarea>
+            <div class="backstory sub-box">
+                <div>
+                    <span>
+                        사상/신념
+                    </span>
+                    <textarea name="attr_ideaology_beliefs" class="backstory-box"> </textarea>
+                </div>
+                <div>
+                    <span>
+                        부상과 흉터
+                    </span>
+                    <textarea name="attr_injuries_scars" class="backstory-box"></textarea>
+                </div>
+            </div>
+            <div class="backstory sub-box">
+                <div>
+                    <span>
+                        공포증과 집착증
+                    </span>
+                    <textarea name="attr_phobias_manias" class="backstory-box"></textarea>
+                </div>
+                <div>
+                    <span>
+                        중요한 사람들
+                    </span>
+                    <textarea name="attr_significant_people" class="backstory-box"> </textarea>
+                </div>
+
+            </div>
+            <div class="backstory sub-box">
+                <div>
+                    <span>
+                        의미있는 장소들
+                    </span>
+                    <textarea name="attr_meaningful_locations" class="backstory-box"></textarea>
+                </div>
+                <div>
+                    <span>
+                        소중한 물건들
+                    </span>
+                    <textarea name="attr_treasured_posessions" class="backstory-box"></textarea>
+                </div>
+            </div>
+            <div class="backstory sub-box">
+                <div>
+                    <span>
+                        신화서, 주문, 유물
+                    </span>
+                    <textarea name="attr_tomes_spells_artifacts" class="backstory-box"></textarea>
+                </div>
+                <div>
+                    <span>
+                        기이한 존재들과의 만남
+                    </span>
+                    <textarea name="attr_encounters_with_strange_entities" class="backstory-box"></textarea>
+                </div>
             </div>
         </div>
     </div>
     <div class="footer">
         <div class="type2">
-            텍스트
+            한 그루의 나무는 언제까지나 그 자리에서 다시 돌아올 그대를 기다릴 것이다.
         </div>
-        <div class="copyright" style="font-size:10px; ">
-            design by. ParkMob
-            from team @MOBCA_D
+        <div class="copyright" style="font-size:10px; color:#dadada;">
+            design by. ParkMob 
+ from team @MOBCA_D
         </div>
     </div>
 </div>
@@ -1882,6 +1949,7 @@
 
 <!----임의 다이스---->
 <rolltemplate class="sheet-rolltemplate-coc-dice-roll">
+
     <div class="sheet-top">
         <caption>{{name}}</caption>
     </div>
@@ -1890,6 +1958,7 @@
             <div class="template_value">{{diceroll}}</div>
         </div>
     </div>
+
 </rolltemplate>
 <!----명중---->
 <rolltemplate class="sheet-rolltemplate-coc-body-hit-loc">
@@ -2072,6 +2141,7 @@
 </rolltemplate>
 <!----요약 광기의 발작---->
 <rolltemplate class="sheet-rolltemplate-coc-bomadness-summ">
+
     <div class="sheet-body">
         <div class="sheet-section1">
             <div class="sheet-lable">광기의 발작 - 요약</div>
@@ -4213,17 +4283,21 @@
         </div>
         <div class="sheet-section2">
             {{#rollTotal() roll1 1}}
+            <div class="sheet-template_value1" style="color:chartreuse;">cRiticAl</div>
             <div class="sheet-template_value2">대성공</div>
             {{/rollTotal() roll1 1}}
             {{#rollBetween() roll1 2 success}}
             {{#rollGreater() roll1 hard}}
+            <div class="sheet-template_value1">success</div>
             <div class="sheet-template_value2">보통 성공</div>
             {{/rollGreater() roll1 hard}}
             {{#rollBetween() roll1 2 hard}}
             {{#rollGreater() roll1 extreme}}
+            <div class="sheet-template_value1">HARd</div>
             <div class="sheet-template_value2">어려운 성공</div>
             {{/rollGreater() roll1 extreme}}
             {{#rollBetween() roll1 2 extreme}}
+            <div class="sheet-template_value1">eXtReMe</div>
             <div class="sheet-template_value2">극단적 성공</div>
             {{/rollBetween() roll1 2 extreme}}
             {{/rollBetween() roll1 2 hard}}
@@ -4231,17 +4305,21 @@
             {{#rollGreater() roll1 success}}
             {{#rollGreater() success 49}}
             {{#rollTotal() roll1 100}}
+            <div class="sheet-template_value1" style="color:red;">fuMble</div>
             <div class="sheet-template_value2"> 대실패</div>
             {{/rollTotal() roll1 100}}
             {{#rollLess() roll1 100}}
+            <div class="sheet-template_value1">fAil</div>
             <div class="sheet-template_value2">실패 </div>
             {{/rollLess() roll1 100}}
             {{/rollGreater() success 49}}
             {{#rollLess() success 50}}
             {{#rollGreater() roll1 95}}
+            <div class="sheet-template_value1" style="color:red;">fuMble</div>
             <div class="sheet-template_value2">대실패</div>
             {{/rollGreater() roll1 95}}
             {{#rollLess() roll1 96}}
+            <div class="sheet-template_value1">fAil</div>
             <div class="sheet-template_value2">실패</div>
             {{/rollLess() roll1 96}}
             {{/rollLess() success 50}}
@@ -4265,17 +4343,21 @@
         </div>
         <div class="sheet-section2">
             {{#rollTotal() roll1 1}}
+            <div class="sheet-template_value1" style="color:chartreuse;">cRiticAl</div>
             <div class="sheet-template_value2">대성공</div>
             {{/rollTotal() roll1 1}}
             {{#rollBetween() roll1 2 success}}
             {{#rollGreater() roll1 hard}}
+            <div class="sheet-template_value1">success</div>
             <div class="sheet-template_value2">보통 성공</div>
             {{/rollGreater() roll1 hard}}
             {{#rollBetween() roll1 2 hard}}
             {{#rollGreater() roll1 extreme}}
+            <div class="sheet-template_value1">HARd</div>
             <div class="sheet-template_value2">어려운 성공</div>
             {{/rollGreater() roll1 extreme}}
             {{#rollBetween() roll1 2 extreme}}
+            <div class="sheet-template_value1">eXtReMe</div>
             <div class="sheet-template_value2">극단적 성공</div>
             {{/rollBetween() roll1 2 extreme}}
             {{/rollBetween() roll1 2 hard}}
@@ -4283,17 +4365,21 @@
             {{#rollGreater() roll1 success}}
             {{#rollGreater() success 49}}
             {{#rollTotal() roll1 100}}
+            <div class="sheet-template_value1" style="color:red;">fuMble</div>
             <div class="sheet-template_value2">대실패</div>
             {{/rollTotal() roll1 100}}
             {{#rollLess() roll1 100}}
+            <div class="sheet-template_value1">fAil</div>
             <div class="sheet-template_value2">실패</div>
             {{/rollLess() roll1 100}}
             {{/rollGreater() success 49}}
             {{#rollLess() success 50}}
             {{#rollGreater() roll1 95}}
+            <div class="sheet-template_value1" style="color:red;">fuMble</div>
             <div class="sheet-template_value2">대실패</div>
             {{/rollGreater() roll1 95}}
             {{#rollLess() roll1 96}}
+            <div class="sheet-template_value1">fAil</div>
             <div class="sheet-template_value2">실패</div>
             {{/rollLess() roll1 96}}
             {{/rollLess() success 50}}
@@ -4306,7 +4392,6 @@
 
 </rolltemplate>
 <!----WORKERS---->
-
 <script type="text/worker">
 on("add:dex add:siz add:str change:dex change:siz change:str", function() {
   getAttrs(["str", "siz", "dex", "age"], function(values) {

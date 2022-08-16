@@ -4,11 +4,12 @@
 **작업자** : @PARKMOB_PBL (PARKMOB) of T.@MOBCA_D (MOBCA)
 
 **커미션 최종 전달 일자** : 2022 03 14  
-**커미션 최종 갱신 일자** : 2022 04 30
+**커미션 최종 갱신 일자** : 2022 08 16
 
 **UPDATE**  
 2022년 03월 14일 최종 전달이 완료되었습니다.  
-2022년 04월 30일 카피라이터 문구가 추가되었습니다.
+2022년 04월 30일 카피라이터 문구가 추가되었습니다.  
+2022년 08월 16일 기능치 정렬이 수정되었습니다.
 
 **OFFICIAL CONTACT** : @MOBCA_D / mobca0.5@park-mob.com  
 **EMERGENCY CONTACT** : @PARKMOB_PBL / yeojinp0415@gmail.com  
