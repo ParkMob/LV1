@@ -8,6 +8,7 @@
 
 **UPDATE**  
 2022년 04월 27일 최종 전달이 완료되었습니다.
+2022년 08월 16일 요청에 의해 기능치 정렬이 수정되었습니다.
 
 **OFFICIAL CONTACT** : @MOBCA_D / mobca0.5@park-mob.com  
 **EMERGENCY CONTACT** : @PARKMOB_PBL / yeojinp0415@gmail.com  
