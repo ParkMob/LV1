@@ -9,7 +9,7 @@
 **UPDATE**  
 2022년 03월 14일 최종 전달이 완료되었습니다.  
 2022년 04월 30일 카피라이터 문구가 추가되었습니다.  
-2022년 08월 16일 기능치 정렬이 요청에 의해 수정되었습니다.
+2022년 08월 16일 기능치 목록 정렬이 요청에 의해 수정되었습니다.
 
 **OFFICIAL CONTACT** : @MOBCA_D / mobca0.5@park-mob.com  
 **EMERGENCY CONTACT** : @PARKMOB_PBL / yeojinp0415@gmail.com  
