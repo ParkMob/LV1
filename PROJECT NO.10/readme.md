@@ -8,7 +8,7 @@
 
 **UPDATE**  
 2022년 09월 30일 최종 전달이 완료되었습니다.  
-2022년 09월 30일 완성본이 업데이트 되었습니다
+2022년 09월 30일 오탈자 수정이 완료되었습니다.
 
 **OFFICIAL CONTACT** : @MOBCA_D / mobca0.5@park-mob.com  
 **EMERGENCY CONTACT** : @PARKMOB_PBL / yeojinp0415@gmail.com  
