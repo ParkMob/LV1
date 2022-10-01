@@ -34,4 +34,4 @@
 
 # 완성물
 
-![PROJECT NO0](URL "https://i.imgur.com/SeOxINI.png")
+![PROJECT N0.10](https://i.imgur.com/SeOxINI.png "NO,10")
