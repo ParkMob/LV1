@@ -15,12 +15,7 @@
 
 
     </div>
-    <img src="https://i.imgur.com/ibMidjz.png" class="img-ab-back" style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        /* display: none; */
-    ">
+    <img src="https://i.imgur.com/ibMidjz.png" class="img-ab-back">
 
     <input class="option area" type="checkbox" checked name="OPTION-AREA" />
     <a class="option btn"></a>
@@ -48,11 +43,11 @@
 
                 <div style="display:flex;column-gap: 10px;">
                     <div class="cb1">
-                        <input type="checkbox" class="shift_page_de1" name="attr_footer" value="1" checked="checked" />
-                        <div class="cb1-false">나의 바다, 너의 봄.</div>
+                        <input type="checkbox" class="shift_page_de1" name="attr_footer" value="1" />
+                        <div class="cb1-false">나의 바다, 너의 봄. </div>
                     </div>
                     <div class="cb2">
-                        <input type="checkbox" class="shift_page_de2" name="attr_footer" value="2" />
+                        <input type="checkbox" class="shift_page_de2" name="attr_footer" value="2" checked="checked" />
                         <div class="cb2-false">나의 봄, 너의 바다.</div>
                     </div>
                 </div>
@@ -98,7 +93,7 @@
 
     <div class="img-header">
 
-        <img src="https://i.imgur.com/lSx5Lhj.png" class="img-ab-front" style="position:relative;
+        <img src="https://i.imgur.com/zzWpMnZ.png" class="img-ab-front" style="position:relative;
         filter: hue-rotate(13deg);">
         <input type="checkbox" style="display:none" class="shift_page_de1" name="attr_footer" value="1"
             checked="checked" />
