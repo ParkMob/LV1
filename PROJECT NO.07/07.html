@@ -10,7 +10,8 @@
             <div class="function able">
                 <div> <input type="checkbox" class="add_function_downtime" name="attr_add_dt" value="1" /> <span>플레이
                         기록</span> </div>
-                <div> <input type="checkbox" class="add_function_dice" name="attr_add_dr" value="1" checked /> <span>추가
+                <div> <input type="checkbox" class="add_function_dice" name="attr_add_dr" value="1" checked="checked" />
+                    <span>추가
                         다이스</span> </div>
                 <div> <input type="checkbox" class="add_function_npcsheet" name="attr_add_ns" value="1" /> <span>NPC 전용
                         시트</span> </div>
@@ -74,7 +75,8 @@
                 <div class="avater-overlay"></div>
                 <div class="frame"></div>
                 <div class="bio-part1"> <input class="bio pl" type="text" name="attr_player" placeholder="플레이어" />
-                    <input class="bio ch" type="text" name="attr_name" placeholder="캐릭터 이름" /> </div>
+                    <input class="bio ch" type="text" name="attr_name" placeholder="캐릭터 이름" />
+                </div>
                 <div class="bio wrap">
                     <div class="bio line1">
                         <div> 나이 </div> <input class="info" type="text" name="attr_age" />
@@ -385,44 +387,52 @@
                             placeholder="기능 1" /> <input class="npc-stat" type="text" name="attr_minionskill1" />
                         <button class='smallbutton-roll' type='roll'
                             value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name= @{minionskill1name}}}{{success=[[@{minionskill1}]]}}{{hard=[[floor(@{minionskill1}/2)]]}}{{extreme=[[floor(@{minionskill1}/5)]]}}{{roll1=[[1d100]]}}'
-                            name='roll_minionskill1_check' /> </div>
+                            name='roll_minionskill1_check' />
+                    </div>
                     <div class="npc-statbox1"> <input class="npc-stat" type="text" name="attr_minionskill2name"
                             placeholder="기능 2" /> <input class="npc-stat" type="text" name="attr_minionskill2" />
                         <button class='smallbutton-roll' type='roll'
                             value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name=@{minionskill2name}}}{{success=[[@{minionskill2}]]}}{{hard=[[floor(@{minionskill2}/2)]]}}{{extreme=[[floor(@{minionskill2}/5)]]}}{{roll1=[[1d100]]}}'
-                            name='roll_minionskill2_check' /> </div>
+                            name='roll_minionskill2_check' />
+                    </div>
                     <div class="npc-statbox1"> <input class="npc-stat" type="text" name="attr_minionskill3name"
                             placeholder="기능 3" /> <input class="npc-stat" type="text" name="attr_minionskill3" />
                         <button class='smallbutton-roll' type='roll'
                             value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name=@{minionskill3name}}}{{success=[[@{minionskill3}]]}}{{hard=[[floor(@{minionskill3}/2)]]}}{{extreme=[[floor(@{minionskill3}/5)]]}}{{roll1=[[1d100]]}}'
-                            name='roll_minionskill3_check' /> </div>
+                            name='roll_minionskill3_check' />
+                    </div>
                     <div class="npc-statbox1"> <input class="npc-stat" type="text" name="attr_minionskill4name"
                             placeholder="기능 4" /> <input class="npc-stat" type="text" name="attr_minionskill4" />
                         <button class='smallbutton-roll' type='roll'
                             value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name=@{minionskill4name}}}{{success=[[@{minionskill4}]]}}{{hard=[[floor(@{minionskill4}/2)]]}}{{extreme=[[floor(@{minionskill4}/5)]]}}{{roll1=[[1d100]]}}'
-                            name='roll_minionskill4_check' /> </div>
+                            name='roll_minionskill4_check' />
+                    </div>
                 </div>
                 <div>
                     <div class="npc-statbox1"> <input class="npc-stat" type="text" name="attr_minionskill5name"
                             placeholder="기능 5" /> <input class="npc-stat" type="text" name="attr_minionskill5" />
                         <button class='smallbutton-roll' type='roll'
                             value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name=@{minionskill5name}}}{{success=[[@{minionskill5}]]}}{{hard=[[floor(@{minionskill5}/2)]]}}{{extreme=[[floor(@{minionskill5}/5)]]}}{{roll1=[[1d100]]}}'
-                            name='roll_minionskill5_check' /> </div>
+                            name='roll_minionskill5_check' />
+                    </div>
                     <div class="npc-statbox1"> <input class="npc-stat" type="text" name="attr_minionskill6name"
                             placeholder="기능 6" /> <input class="npc-stat" type="text" name="attr_minionskill6" />
                         <button class='smallbutton-roll' type='roll'
                             value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name=@{minionskill6name}}}{{success=[[@{minionskill6}]]}}{{hard=[[floor(@{minionskill6}/2)]]}}{{extreme=[[floor(@{minionskill6}/5)]]}}{{roll1=[[1d100]]}}'
-                            name='roll_minionskill6_check' /> </div>
+                            name='roll_minionskill6_check' />
+                    </div>
                     <div class="npc-statbox1"> <input class="npc-stat" type="text" name="attr_minionskill7name"
                             placeholder="기능 7" /> <input class="npc-stat" type="text" name="attr_minionskill7" />
                         <button class='smallbutton-roll' type='roll'
                             value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name=@{minionskill7name}}}{{success=[[@{minionskill7}]]}}{{hard=[[floor(@{minionskill7}/2)]]}}{{extreme=[[floor(@{minionskill7}/5)]]}}{{roll1=[[1d100]]}}'
-                            name='roll_minionskill7_check' /> </div>
+                            name='roll_minionskill7_check' />
+                    </div>
                     <div class="npc-statbox1"> <input class="npc-stat" type="text" name="attr_minionskill8name"
                             placeholder="기능 8" /> <input class="npc-stat" type="text" name="attr_minionskill8" />
                         <button class='smallbutton-roll' type='roll'
                             value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name=@{minionskill8name}}}{{success=[[@{minionskill8}]]}}{{hard=[[floor(@{minionskill8}/2)]]}}{{extreme=[[floor(@{minionskill8}/5)]]}}{{roll1=[[1d100]]}}'
-                            name='roll_minionskill8_check'></button> </div>
+                            name='roll_minionskill8_check'></button>
+                    </div>
                 </div>
             </div>
             <div class="subhead-NPC">전투</div>
@@ -451,7 +461,8 @@
                         <div class="npc-statbox"> <input class="npc-stat" type="text" name="attr_minion_san_roll" />
                             <button class='smallbutton-roll' type='roll'
                                 value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name=이성치}}{{success=[[@{minion_san_roll}]]}}{{hard=[[floor(@{minion_san_roll}/2)]]}}{{extreme=[[floor(@{minion_san_roll}/5)]]}}{{roll1=[[1d100]]}}'
-                                name='roll_minion_san_roll_check'></button> </div>
+                                name='roll_minion_san_roll_check'></button>
+                        </div>
                     </div>
                 </div> <textarea class="npc" name="attr_minion_stats_info" placeholder="프로필 및 정보 기입" />
                 <div class="subhead-NPC">특성치</div>
@@ -525,44 +536,52 @@
                                 placeholder="기능 1" /> <input class="npc-stat" type="text" name="attr_minionskill1" />
                             <button class='smallbutton-roll' type='roll'
                                 value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name= @{minionskill1name}}}{{success=[[@{minionskill1}]]}}{{hard=[[floor(@{minionskill1}/2)]]}}{{extreme=[[floor(@{minionskill1}/5)]]}}{{roll1=[[1d100]]}}'
-                                name='roll_minionskill1_check' /> </div>
+                                name='roll_minionskill1_check' />
+                        </div>
                         <div class="npc-statbox1"> <input class="npc-stat" type="text" name="attr_minionskill2name"
                                 placeholder="기능 2" /> <input class="npc-stat" type="text" name="attr_minionskill2" />
                             <button class='smallbutton-roll' type='roll'
                                 value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name=@{minionskill2name}}}{{success=[[@{minionskill2}]]}}{{hard=[[floor(@{minionskill2}/2)]]}}{{extreme=[[floor(@{minionskill2}/5)]]}}{{roll1=[[1d100]]}}'
-                                name='roll_minionskill2_check' /> </div>
+                                name='roll_minionskill2_check' />
+                        </div>
                         <div class="npc-statbox1"> <input class="npc-stat" type="text" name="attr_minionskill3name"
                                 placeholder="기능 3" /> <input class="npc-stat" type="text" name="attr_minionskill3" />
                             <button class='smallbutton-roll' type='roll'
                                 value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name=@{minionskill3name}}}{{success=[[@{minionskill3}]]}}{{hard=[[floor(@{minionskill3}/2)]]}}{{extreme=[[floor(@{minionskill3}/5)]]}}{{roll1=[[1d100]]}}'
-                                name='roll_minionskill3_check' /> </div>
+                                name='roll_minionskill3_check' />
+                        </div>
                         <div class="npc-statbox1"> <input class="npc-stat" type="text" name="attr_minionskill4name"
                                 placeholder="기능 4" /> <input class="npc-stat" type="text" name="attr_minionskill4" />
                             <button class='smallbutton-roll' type='roll'
                                 value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name=@{minionskill4name}}}{{success=[[@{minionskill4}]]}}{{hard=[[floor(@{minionskill4}/2)]]}}{{extreme=[[floor(@{minionskill4}/5)]]}}{{roll1=[[1d100]]}}'
-                                name='roll_minionskill4_check' /> </div>
+                                name='roll_minionskill4_check' />
+                        </div>
                     </div>
                     <div>
                         <div class="npc-statbox1"> <input class="npc-stat" type="text" name="attr_minionskill5name"
                                 placeholder="기능 5" /> <input class="npc-stat" type="text" name="attr_minionskill5" />
                             <button class='smallbutton-roll' type='roll'
                                 value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name=@{minionskill5name}}}{{success=[[@{minionskill5}]]}}{{hard=[[floor(@{minionskill5}/2)]]}}{{extreme=[[floor(@{minionskill5}/5)]]}}{{roll1=[[1d100]]}}'
-                                name='roll_minionskill5_check' /> </div>
+                                name='roll_minionskill5_check' />
+                        </div>
                         <div class="npc-statbox1"> <input class="npc-stat" type="text" name="attr_minionskill6name"
                                 placeholder="기능 6" /> <input class="npc-stat" type="text" name="attr_minionskill6" />
                             <button class='smallbutton-roll' type='roll'
                                 value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name=@{minionskill6name}}}{{success=[[@{minionskill6}]]}}{{hard=[[floor(@{minionskill6}/2)]]}}{{extreme=[[floor(@{minionskill6}/5)]]}}{{roll1=[[1d100]]}}'
-                                name='roll_minionskill6_check' /> </div>
+                                name='roll_minionskill6_check' />
+                        </div>
                         <div class="npc-statbox1"> <input class="npc-stat" type="text" name="attr_minionskill7name"
                                 placeholder="기능 7" /> <input class="npc-stat" type="text" name="attr_minionskill7" />
                             <button class='smallbutton-roll' type='roll'
                                 value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name=@{minionskill7name}}}{{success=[[@{minionskill7}]]}}{{hard=[[floor(@{minionskill7}/2)]]}}{{extreme=[[floor(@{minionskill7}/5)]]}}{{roll1=[[1d100]]}}'
-                                name='roll_minionskill7_check' /> </div>
+                                name='roll_minionskill7_check' />
+                        </div>
                         <div class="npc-statbox1"> <input class="npc-stat" type="text" name="attr_minionskill8name"
                                 placeholder="기능 8" /> <input class="npc-stat" type="text" name="attr_minionskill8" />
                             <button class='smallbutton-roll' type='roll'
                                 value='&{template:coc-1}{{cname=&ulcorn;@{minion_name}&drcorn;의&nbsp;판정}}{{name=@{minionskill8name}}}{{success=[[@{minionskill8}]]}}{{hard=[[floor(@{minionskill8}/2)]]}}{{extreme=[[floor(@{minionskill8}/5)]]}}{{roll1=[[1d100]]}}'
-                                name='roll_minionskill8_check'></button> </div>
+                                name='roll_minionskill8_check'></button>
+                        </div>
                     </div>
                 </div>
                 <div class="subhead-NPC">전투</div>
@@ -584,7 +603,8 @@
             </div>
         </fieldset>
     </div>
-    <!----기능치----> <input type="checkbox" style="display:none" class="shift_page_skill" name="attr_page" value="0" />
+    <!----기능치---->
+    <input type="checkbox" style="display:none" class="shift_page_skill" name="attr_page" value="0" />
     <div class="skill wrap">
         <div class="skill title"> · 기능치 · </div>
         <div class="skill box">
@@ -1222,7 +1242,7 @@
             <div class="sks"> <input type="checkbox" class="shift_page_combet" name="attr_page" value="0" checked />
                 <div class="sks-false">· 전투/무기 ·</div>
             </div>
-            <div class="cb"> <input type="checkbox" class="shift_page_gear" name="attr_page" value="1" />
+            <div class=""> <input type="checkbox" class="shift_page_gear" name="attr_page" value="1" />
                 <div class="cb-false">· 소지품/자금 ·</div>
             </div>
             <div class="bs"> <input type="checkbox" class="shift_page_bg" name="attr_page" value="2" />
@@ -1230,7 +1250,8 @@
             </div>
         </div>
     </div>
-    <!----전투----> <input type="checkbox" style="display:none" class="shift_page_combet" name="attr_page" value="0" />
+    <!----전투---->
+    <input type="checkbox" style="display:none" class="shift_page_combet" name="attr_page" value="0" />
     <div class="combet wrap">
         <div class="combet title"> · 전투 및 무기 · </div>
         <div class="combet box">
@@ -1271,7 +1292,8 @@
                     <option value="+@{damage_bonus}">+db</option>
                 </select> <input class="ATK" type="text" name="attr_weapon1_mdr_range" /> <input class="ATK" type="text"
                     name="attr_weapon1_mdr_attacks" /> <input class="ATK" type="text" name="attr_weapon1_mdr_ammo" />
-                <input class="ATK" type="text" name="attr_weapon1_mdr_malf" /> </div>
+                <input class="ATK" type="text" name="attr_weapon1_mdr_malf" />
+            </div>
             <div class="combet line"> <input class="ATK default" type="text" name="attr_weapon2_mdr_name" /> <button
                     class='ATK1' type='roll'
                     value='&{template:coc-attack}{{name=&ulcorn;@{character_name}&drcorn;의&nbsp;공격}}{{weaponname=@{weapon2_mdr_name}}}{{success=[[@{weapon2_mdr_skill}]]}}{{hard=[[floor(@{weapon2_mdr_skill}/2)]]}}{{extreme=[[floor(@{weapon2_mdr_skill}/5)]]}}{{malf=@{weapon2_mdr_malf}}}{{roll1=[[1d100]]}}{{roll2=[[1d100]]}}{{roll3=[[1d100]]}}{{damage=[[@{weapon2_mdr_damage}@{weapon2_mdr_db}]]}}'
@@ -1297,7 +1319,8 @@
                     <option value="+@{damage_bonus}">+db</option>
                 </select> <input class="ATK" type="text" name="attr_weapon2_mdr_range" /> <input class="ATK" type="text"
                     name="attr_weapon2_mdr_attacks" /> <input class="ATK" type="text" name="attr_weapon2_mdr_ammo" />
-                <input class="ATK" type="text" name="attr_weapon2_mdr_malf" /> </div>
+                <input class="ATK" type="text" name="attr_weapon2_mdr_malf" />
+            </div>
             <div class="combet line"> <input class="ATK default" type="text" name="attr_weapon3_mdr_name" /> <button
                     class='ATK1' type='roll'
                     value='&{template:coc-attack}{{name=&ulcorn;@{character_name}&drcorn;의&nbsp;공격}}{{weaponname=@{weapon3_mdr_name}}}{{success=[[@{weapon3_mdr_skill}]]}}{{hard=[[floor(@{weapon3_mdr_skill}/2)]]}}{{extreme=[[floor(@{weapon3_mdr_skill}/5)]]}}{{malf=@{weapon3_mdr_malf}}}{{roll1=[[1d100]]}}{{roll2=[[1d100]]}}{{roll3=[[1d100]]}}{{damage=[[@{weapon3_mdr_damage}@{weapon3_mdr_db}]]}}'
@@ -1323,7 +1346,8 @@
                     <option value="+@{damage_bonus}">+db</option>
                 </select> <input class="ATK" type="text" name="attr_weapon3_mdr_range" /> <input class="ATK" type="text"
                     name="attr_weapon3_mdr_attacks" /> <input class="ATK" type="text" name="attr_weapon3_mdr_ammo" />
-                <input class="ATK" type="text" name="attr_weapon3_mdr_malf" /> </div>
+                <input class="ATK" type="text" name="attr_weapon3_mdr_malf" />
+            </div>
             <fieldset class="repeating_weaponsmdr">
                 <div class="combet line"> <input class="ATK default" type="text" name="attr_weaponname_mdr" /> <button
                         class='ATK1' type='roll'
@@ -1355,7 +1379,8 @@
             </fieldset>
         </div>
     </div>
-    <!----장비/소지품----> <input type="checkbox" style="display:none" class="shift_page_gear" name="attr_page" value="1" />
+    <!----장비/소지품---->
+    <input type="checkbox" style="display:none" class="shift_page_gear" name="attr_page" value="1" />
     <div class="gear_poss wrap">
         <div class='gear wrap'>
             <div class="gear title"> · 장비와 소지품 · </div>
@@ -1566,14 +1591,17 @@
                     않을 수도있습니다. <span style="color: #919191;">{{name}}</span>이(가) 무엇을 대상으로 폭력을 휘둘렀는지, 그리고 사람을 죽이거나 다치게
                     했는지는 수호자가 결정합니다. </div> {{/rollTotal() roll1 4}}{{#rollTotal() roll1 5}}<div class="template_value">
                     <span style="color: #919191;">{{name}}</span>의 백스토리에서 사상/신념을 확인합니다. <span
-                        style="color: #919191;">{{name}}</span>은(는) 그중 하나를 극단적이고 괴이한 방법으로 표출합니다. </div> {{/rollTotal()
+                        style="color: #919191;">{{name}}</span>은(는) 그중 하나를 극단적이고 괴이한 방법으로 표출합니다.
+                </div> {{/rollTotal()
                 roll1 5}}{{#rollTotal() roll1 6}}<div class="template_value"> <span
                         style="color: #919191;">{{name}}</span>의 백스토리에서 중요한 사람들을 찾아 그 관계가 중요한 이유를 확인합니다. <span
                         style="color: #919191;">{{name}}</span>은(는) 발작이 지속되는 동안 (1D10시간 이상) 중요한 사람에게 가까이 가서 관계의 성질에 맞는
                     행동을 하려고 합니다. </div> {{/rollTotal() roll1 6}}{{#rollTotal() roll1 7}}<div class="template_value">
                     <span style="color: #919191;">{{name}}</span>이(가) 정신을 차려 보니 정신병원이나 경찰서 유치장에 갇혀 있습니다. 그간의 사정이 조금씩
-                    기억나기 시작할수도 있습니다. </div> {{/rollTotal() roll1 7}}{{#rollTotal() roll1 8}}<div class="template_value">
-                    <span style="color: #919191;">{{name}}</span>이(가) 정신을 차려 보니 먼 곳에 와 있습니다. </div> {{/rollTotal() roll1
+                    기억나기 시작할수도 있습니다.
+                </div> {{/rollTotal() roll1 7}}{{#rollTotal() roll1 8}}<div class="template_value">
+                    <span style="color: #919191;">{{name}}</span>이(가) 정신을 차려 보니 먼 곳에 와 있습니다.
+                </div> {{/rollTotal() roll1
                 8}}{{#rollTotal() roll1 9}}<div class="template_value"> <span style="color: #919191;">{{name}}</span>에게
                     새로운 공포증이 생깁니다. 룰북에 있는 공포증의 예를 참고해 1D100으로 정하거나 수호자가 적절한것을 고릅니다. <span
                         style="color: #919191;">{{name}}</span>은(는) 새로운 공포의 대상을 피하기 위해 온갖 조치를 다 취한 상태로 1D10시간 후에 정신을
@@ -1608,7 +1636,8 @@
             100}}{{/rollGreater() success 49}}{{#rollLess() success 50}}{{#rollGreater() roll1 95}}<div
                 class="sheet-template_value2">대실패</div> {{/rollGreater() roll1 95}}{{#rollLess() roll1 96}}<div
                 class="sheet-template_value2">실패</div> {{/rollLess() roll1 96}}{{/rollLess() success
-            50}}{{/rollGreater() roll1 success}}</div>
+            50}}{{/rollGreater() roll1 success}}
+        </div>
     </div>
     <div class="sheet-foot">
         <div class="SKILL-TEM-DAMAGE">{{damage}}대미지</div>
@@ -1742,7 +1771,8 @@
                     49}}{{#rollLess() success 50}}{{#rollGreater() roll1 95}}<div class="template_value">대실패</div>
                     {{/rollGreater() roll1 95}}{{#rollLess() roll1 96}}<div class="template_value">실패</div>
                     {{/rollLess() roll1 96}}{{/rollLess() success 50}}{{/rollGreater() roll1 success}}{{/rollTotal()
-                    roll1 roll3}}{{/rollTotal() roll1 roll2}}</div>
+                    roll1 roll3}}{{/rollTotal() roll1 roll2}}
+                </div>
             </div>
             <div class="sheet-pair">
                 <div class="sheet-pair-lable"> +1 </div>
@@ -1782,7 +1812,8 @@
                     100}}{{/rollGreater() success 49}}{{#rollLess() success 50}}{{#rollGreater() roll1 95}}<div
                         class="template_value">대실패</div> {{/rollGreater() roll1 95}}{{#rollLess() roll1 96}}<div
                         class="template_value">실패</div> {{/rollLess() roll1 96}}{{/rollLess() success
-                    50}}{{/rollGreater() roll1 success}}{{/rollTotal() roll1 roll2}}</div>
+                    50}}{{/rollGreater() roll1 success}}{{/rollTotal() roll1 roll2}}
+                </div>
             </div>
             <div class="sheet-pair">
                 <div class="sheet-pair-lable"> +0 </div>
@@ -1837,7 +1868,8 @@
                     100}}{{/rollGreater() success 49}}{{#rollLess() success 50}}{{#rollGreater() roll1 95}}<div
                         class="template_value">대실패</div> {{/rollGreater() roll1 95}}{{#rollLess() roll1 96}}<div
                         class="template_value">실패</div> {{/rollLess() roll1 96}}{{/rollLess() success
-                    50}}{{/rollGreater() roll1 success}}{{/rollTotal() roll1 roll2}}</div>
+                    50}}{{/rollGreater() roll1 success}}{{/rollTotal() roll1 roll2}}
+                </div>
             </div>
             <div class="sheet-pair">
                 <div class="sheet-pair-lable"> -2 </div>
@@ -1951,7 +1983,8 @@
                     100}}{{/rollGreater() success 49}}{{#rollLess() success 50}}{{#rollGreater() roll1 95}}<div
                         class="template_value">대실패</div> {{/rollGreater() roll1 95}}{{#rollLess() roll1 96}}<div
                         class="template_value">실패</div> {{/rollLess() roll1 96}}{{/rollLess() success
-                    50}}{{/rollGreater() roll1 success}}{{/rollTotal() roll1 roll3}}{{/rollTotal() roll1 roll2}}</div>
+                    50}}{{/rollGreater() roll1 success}}{{/rollTotal() roll1 roll3}}{{/rollTotal() roll1 roll2}}
+                </div>
             </div>
         </div>
     </div>
@@ -2123,7 +2156,8 @@
                     100}}{{/rollGreater() success 49}}{{#rollLess() success 50}}{{#rollGreater() roll1 95}}<div
                         class="template_value">대실패</div> {{/rollGreater() roll1 95}}{{#rollLess() roll1 96}}<div
                         class="template_value">실패</div> {{/rollLess() roll1 96}}{{/rollLess() success
-                    50}}{{/rollGreater() roll1 success}}{{/rollTotal() roll1 roll2}}</div>
+                    50}}{{/rollGreater() roll1 success}}{{/rollTotal() roll1 roll2}}
+                </div>
             </div>
             <div class="sheet-pair">
                 <div class="sheet-pair-lable"> +0 판정 </div>
@@ -2178,7 +2212,8 @@
                     100}}{{/rollGreater() success 49}}{{#rollLess() success 50}}{{#rollGreater() roll1 95}}<div
                         class="template_value">대실패</div> {{/rollGreater() roll1 95}}{{#rollLess() roll1 96}}<div
                         class="template_value">실패</div> {{/rollLess() roll1 96}}{{/rollLess() success
-                    50}}{{/rollGreater() roll1 success}}{{/rollTotal() roll1 roll2}}</div>
+                    50}}{{/rollGreater() roll1 success}}{{/rollTotal() roll1 roll2}}
+                </div>
             </div>
             <div class="sheet-pair">
                 <div class="sheet-pair-lable"> -2 판정 </div>
@@ -2292,7 +2327,8 @@
                     100}}{{/rollGreater() success 49}}{{#rollLess() success 50}}{{#rollGreater() roll1 95}}<div
                         class="template_value">대실패</div> {{/rollGreater() roll1 95}}{{#rollLess() roll1 96}}<div
                         class="template_value">실패</div> {{/rollLess() roll1 96}}{{/rollLess() success
-                    50}}{{/rollGreater() roll1 success}}{{/rollTotal() roll1 roll3}}{{/rollTotal() roll1 roll2}}</div>
+                    50}}{{/rollGreater() roll1 success}}{{/rollTotal() roll1 roll3}}{{/rollTotal() roll1 roll2}}
+                </div>
             </div>
         </div>
     </div>

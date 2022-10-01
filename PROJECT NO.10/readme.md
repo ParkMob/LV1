@@ -3,12 +3,12 @@
 **신청자** : @**\*\***  
 **작업자** : @PARKMOB_PBL (PARKMOB) of T.@MOBCA_D (MOBCA)
 
-**커미션 최종 전달 일자** : 0000 00 00  
-**커미션 최종 갱신 일자** : 0000 00 00
+**커미션 최종 전달 일자** : 2022 09 30  
+**커미션 최종 갱신 일자** : 2022 09 30
 
 **UPDATE**  
-0000년 00월 00일 최종 전달이 완료되었습니다.  
-0000년 00월 00일 (내역)이 업데이트 되었습니다
+2022년 09월 30일 최종 전달이 완료되었습니다.  
+2022년 09월 30일 완성본이 업데이트 되었습니다
 
 **OFFICIAL CONTACT** : @MOBCA_D / mobca0.5@park-mob.com  
 **EMERGENCY CONTACT** : @PARKMOB_PBL / yeojinp0415@gmail.com  
@@ -34,4 +34,4 @@
 
 # 완성물
 
-![PROJECT NO0](URL "PREVIEW")
+![PROJECT NO0](URL "https://i.imgur.com/SeOxINI.png")
